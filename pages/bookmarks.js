@@ -1,9 +1,7 @@
 export default function bookmarks(){
     return(
-        <>
-            <h1>
-                This is bookmarks page
-            </h1>
-        </>
+        <section className = "w-full h-80 bg-purple-600">
+      <h1>This is contanct</h1>
+    </section>
     )
 }
