@@ -1,7 +1,7 @@
 export default function Header(){
     return(
         <header>
-            <nav>
+            <nav className="flex">
                 <p>Harsh</p>
                 <ul>
                     <li>Home</li>
