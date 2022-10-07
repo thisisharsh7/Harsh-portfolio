@@ -27,7 +27,9 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <Header />
+      <main className="flex justify-center p-8">
       <Component {...pageProps} />
+      </main>
     </>
   );
 }
