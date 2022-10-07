@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import Header from "../Extend/Header";
 import Head from "next/head";
+import Footer from "../Extend/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -30,6 +31,7 @@ function MyApp({ Component, pageProps }) {
       <main className="flex justify-center p-8">
       <Component {...pageProps} />
       </main>
+      <Footer />
     </>
   );
 }
