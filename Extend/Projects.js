@@ -11,11 +11,11 @@ export default function Projects() {
         Projects
       </h1>
       <div className="flex flex-col gap-20 pt-16">
-        <div className="flex gap-10 sm:flex-nowrap flex-wrap">
+        <div className="flex gap-10 sm:flex-row flex-col">
         <div className=" flex shadow-black shadow-lg">
           <Image src={digitalOcean}/>
         </div>
-          <div className="flex flex-col gap-4 max-w-[20rem]">
+          <div className="flex flex-col gap-4 w-full md:max-w-[20rem]">
             <h1 className="text-base font-bold bg-blue-200 rounded-lg p-3 text-gray-600 flex gap-3 sm:w-[20rem] w-full ">
               <span className="text-black">01. </span>DigitalOcean - The
               developer community
@@ -45,9 +45,9 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="flex gap-10 sm:flex-nowrap flex-wrap">
+        <div className="flex gap-10 sm:flex-row flex-col-reverse">
         
-          <div className="flex flex-col gap-4 max-w-[20rem]">
+          <div className="flex flex-col gap-4 w-full md:max-w-[20rem]">
             <h1 className="text-base font-bold bg-red-200 rounded-lg p-3 text-gray-600 flex gap-3 sm:w-[20rem] w-full">
               <span className="text-black">02. </span>Netflix-Cat
             </h1>
@@ -82,10 +82,10 @@ export default function Projects() {
           <div className=" flex shadow-black shadow-lg">
           <Image src={netflix} /></div>
         </div>
-        <div className="flex gap-10 sm:flex-nowrap flex-wrap">
+        <div className="flex gap-10 sm:flex-row flex-col">
         <div className=" flex shadow-black shadow-lg">
           <Image src={world} /></div>
-          <div className="flex flex-col gap-4 max-w-[20rem]">
+          <div className="flex flex-col gap-4 w-full md:max-w-[20rem]">
             <h1 className="text-base font-bold bg-orange-200 rounded-lg p-3 text-gray-600 flex gap-3 sm:w-[20rem] w-full">
               <span className="text-black">03. </span>Where in the world?
             </h1>

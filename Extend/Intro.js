@@ -13,7 +13,7 @@ export default function Intro() {
           Frontend Mentor community and make suggestions for improvements.
         </p>
       </div>
-      <div className="sm:w-40 w-60">
+      <div className="sm:w-40 max-w-md">
       <Image
         src={harsh}
         className="rounded-full "
