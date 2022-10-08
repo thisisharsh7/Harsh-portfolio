@@ -10,27 +10,10 @@ import cplus from "../public/Images/cplus.png";
 import redux from "../public/Images/redux.svg";
 import firebase from "../public/Images/firebase.png";
 
-export default function about() {
+export default function About() {
   return (
     <section className="w-full flex flex-col gap-12 max-w-screen-md pt-2 ">
-    <div className="  flex flex-col items-center gap-10">
-      <h1 className="text-3xl relative font-semibold before:content-[''] before:w-full before:h-0.5 before:bottom-0 before:bg-black before:absolute">
-        About me
-      </h1>
-      <p className="flex flex-col gap-5">
-        <span>
-          Hello! I'm Harsh, 2nd year student at Maharaja Agrasen Institute of
-          Technology, New Delhi, India. Enjoys running, playing sudoko, coding,
-          and surfing tech topics on internet.
-        </span>
-        <span>
-          I'm open to Job opportunities where I can learn, contribute and grow.
-          If you have a good opportunity that matches my skills and experience
-          then do contact me.
-        </span>
-      </p>
-      </div>
-      <div className="flex flex-col items-center gap-10">
+     <div className="flex flex-col items-center gap-10">
         <h1 className="text-3xl relative font-semibold before:content-[''] before:w-full before:h-0.5 before:bottom-0 before:bg-black before:absolute">Skills</h1>
         <ul className="flex flex-wrap gap-10 justify-center skill-list items-center">
           <li><Image src={twind} alt="twind" width={70} height={75}/><span className="bg-gray-200 py-1 px-2 rounded-md">tailwindcss</span></li>
@@ -44,6 +27,23 @@ export default function about() {
           <li><Image src={redux} alt="redux" width={70} height={75}/><span className="bg-gray-200 py-1 px-2 rounded-md">Redux</span></li>
           <li><Image src={firebase} alt="firebase" width={70} height={75}/><span className="bg-gray-200 py-1 px-2 rounded-md">Firebase</span></li>
         </ul>
+      </div>
+    <div className="  flex flex-col items-center gap-10 ">
+      <h1 className="text-3xl relative font-semibold before:content-[''] before:w-full before:h-0.5 before:bottom-0 before:bg-black before:absolute" >
+        About me
+      </h1>
+      <p className="flex flex-col gap-5" id="about">
+        <span>
+          Hello! I'm Harsh, 2nd year student at Maharaja Agrasen Institute of
+          Technology, New Delhi, India. Enjoys running, playing sudoko, coding,
+          and surfing tech topics on internet.
+        </span>
+        <span>
+          I'm open to Job opportunities where I can learn, contribute and grow.
+          If you have a good opportunity that matches my skills and experience
+          then do contact me.
+        </span>
+      </p>
       </div>
     </section>
   );
