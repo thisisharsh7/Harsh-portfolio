@@ -40,3 +40,19 @@ body {
   align-items: center;
   padding: 1rem;
 }
+.liveAnim{
+  animation: blink 800ms infinite alternate linear;
+}
+@keyframes blink {
+  100%{
+    background-color: rgb(18, 233, 18);
+  }
+}
+.repoAnim{
+  animation: bink 800ms infinite alternate linear;
+}
+@keyframes bink {
+  100%{
+    background-color: rgb(110, 110, 110);
+  }
+}

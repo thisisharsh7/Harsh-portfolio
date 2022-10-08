@@ -12,7 +12,7 @@ import firebase from "../public/Images/firebase.png";
 
 export default function About() {
   return (
-    <section className="w-full flex flex-col gap-12 max-w-screen-md pt-3">
+    <section className="w-full flex flex-col max-w-screen-md">
       <div className="flex flex-col gap-5">
         <h1 className="text-3xl relative font-semibold before:content-[''] before:w-full before:h-0.5 before:bottom-0 before:bg-black before:absolute">
           Skills
@@ -62,8 +62,9 @@ export default function About() {
           </li>
         </ul>
       </div>
+      <div id="about" className="w-full h-16"></div>
       <div className="  flex flex-col gap-10 ">
-        <h1 className="text-3xl relative font-semibold before:content-[''] before:w-full before:h-0.5 before:bottom-0 before:bg-black before:absolute">
+        <h1 className="text-3xl relative font-semibold before:content-[''] before:w-full before:h-0.5 before:bottom-0 before:bg-black before:absolute ">
           About me
         </h1>
         <p className="flex flex-col gap-5">
