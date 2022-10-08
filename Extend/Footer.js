@@ -8,11 +8,11 @@ import instaIc from "../public/Images/instaIc.svg";
 
 export default function Footer() {
   return (
-    <footer className="flex items-center flex-col gap-10 ">
-        <div className="flex  items-start w-full justify-between max-w-screen-md border-t-2 pt-5 ">
+    <footer className="flex items-center flex-col gap-10 pb-5">
+        <div className="flex  items-start w-full justify-between max-w-screen-md border-t-2 pt-5 sm:flex-nowrap flex-wrap sm:gap-10 gap-6 p-4">
             <div className="flex flex-col gap-3">
                 <h1 className="font-bold text-2xl">Harsh Kumar</h1>
-                <p className="max-w-md">The web is a place that I explore every day as a Web Developer.</p>
+                <p className="max-w-sm">The web is a place that I explore every day as a Web Developer.</p>
             </div>
             <div className="flex flex-col gap-3">
                 <h1 className="text-xl text-gray-700 font-bold">Profiles</h1>
@@ -25,7 +25,7 @@ export default function Footer() {
                 </ul>
             </div>
         </div>
-        <p className="text-center">Developed by <span> Harsh Kumar</span> with <span>💖</span>
+        <p className="text-center text-sm">Developed by <span> Harsh Kumar</span> with <span>💖</span>
           </p>
     </footer>
   )
