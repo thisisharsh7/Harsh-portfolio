@@ -6,7 +6,7 @@ import Bookmarks from "../Extend/Bookmarks";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-10 items-center sm:p-12 p-6">
+    <main className="flex flex-col gap-10 items-center sm:p-8 p-6">
       <Intro />
       <About />
       <Projects />

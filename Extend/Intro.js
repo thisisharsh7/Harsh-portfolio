@@ -2,7 +2,7 @@ import harsh from "../public/Images/harsh-2.jpg";
 import Image from "next/image";
 export default function Intro() {
   return (
-    <section className="w-full flex sm:flex-row flex-col-reverse items-start max-w-screen-md pt-10 justify-between ">
+    <section className="w-full flex sm:flex-row flex-col-reverse items-start max-w-screen-md pt-8 pb-4 justify-between ">
       <div className="flex flex-col gap-5">
         <div className="intro flex flex-col gap-1">
           <h1 className="font-bold sm:text-5xl text-4xl">Harsh Kumar</h1>
@@ -13,13 +13,14 @@ export default function Intro() {
           Frontend Mentor community and make suggestions for improvements.
         </p>
       </div>
-      <div className="sm:w-40 max-w-md">
+      <div className="sm:w-36 max-w-md text-center ">
       <Image
         src={harsh}
-        className="rounded-full "
-        width="160"
-        height="160"
+        className="rounded-full"
+        width="150"
+        height="150"
         alt="harsh-profile"
+        priority={true}
       />
       </div>
     </section>
