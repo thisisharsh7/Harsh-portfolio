@@ -33,6 +33,24 @@ body {
   position: absolute;
   bottom: 6px;
 }
+.menu:before{
+  content: "";
+  height:8px;
+  width: 100%;
+  background-color: rgb(104, 104, 104);
+  position: absolute;
+  transition: all;
+  transition-duration: 500ms;
+}
+.menu:after{
+  content: "";
+  height:8px;
+  width: 100%;
+  background-color: rgb(104, 104, 104);
+  position: absolute;
+  transition: all;
+  transition-duration: 500ms;
+}
 .skill-list li{
   display: flex;
   flex-direction: column ;

@@ -16,7 +16,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col gap-3">
                 <h1 className="text-xl text-gray-700 font-bold">Profiles</h1>
-                <ul className="flex gap-5">
+                <ul className="flex flex-wrap gap-5">
                     <li className="cursor-pointer h-7 hover:-translate-y-1 transition-all duration-500"><a href="https://github.com/thisisharsh7" target="_blank"><Image src={gitHubIc} alt="GitHub" width={30} height={30}/></a></li>
                     <li className="cursor-pointer h-7 hover:-translate-y-1 transition-all duration-500"><a href="https://www.linkedin.com/in/thisisharsh7/" target="_blank"><Image src={linkedInIc} alt="LinkedIn" width={30} height={30}/></a></li>
                     <li className="cursor-pointer h-7 hover:-translate-y-1 transition-all duration-500"><a href="https://github.com/thisisharsh7" target="_blank"><Image src={mailIc} alt="Email" width={30} height={30}/></a></li>
