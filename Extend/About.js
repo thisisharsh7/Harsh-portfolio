@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image priority={true} from "next/image";
 import twind from "./Images/tailwind.svg";
 import saas from "./Images/saas.svg";
 import jscript from "./Images/javascript.png";
@@ -19,45 +19,45 @@ export default function About() {
         </h1>
         <ul className="flex flex-wrap gap-10 justify-center skill-list items-center">
           <li>
-            <Image src={twind} alt="twind" width={70} height={75} />
+            <Image priority={true} src={twind} alt="twind" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">
               tailwindcss
             </span>
           </li>
           <li>
-            <Image src={saas} alt="saas" width={70} height={75} />
+            <Image priority={true} src={saas} alt="saas" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">Saas/Scss</span>
           </li>
           <li>
-            <Image src={jscript} alt="jscript" width={70} height={75} />
+            <Image priority={true} src={jscript} alt="jscript" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">Javascript</span>
           </li>
           <li>
-            <Image src={react} alt="react" width={70} height={75} />
+            <Image priority={true} src={react} alt="react" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">React</span>
           </li>
           <li>
-            <Image src={nextjs} alt="nextjs" width={70} height={75} />
+            <Image priority={true} src={nextjs} alt="nextjs" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">Next Js</span>
           </li>
           <li>
-            <Image src={git} alt="git" width={70} height={75} />
+            <Image priority={true} src={git} alt="git" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">Git</span>
           </li>
           <li>
-            <Image src={clang} alt="clang" width={70} height={75} />
+            <Image priority={true} src={clang} alt="clang" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">C</span>
           </li>
           <li>
-            <Image src={cplus} alt="cplus" width={70} height={75} />
+            <Image priority={true} src={cplus} alt="cplus" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">C++</span>
           </li>
           <li>
-            <Image src={redux} alt="redux" width={70} height={75} />
+            <Image priority={true} src={redux} alt="redux" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">Redux</span>
           </li>
           <li>
-            <Image src={firebase} alt="firebase" width={70} height={75} />
+            <Image priority={true} src={firebase} alt="firebase" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">Firebase</span>
           </li>
         </ul>
