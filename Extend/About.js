@@ -1,4 +1,4 @@
-import Image priority={true} from "next/image";
+import Image from "next/image";
 import twind from "./Images/tailwind.svg";
 import saas from "./Images/saas.svg";
 import jscript from "./Images/javascript.png";
