@@ -22,7 +22,7 @@ export default function Projects() {
             </h1>
             <div className="flex flex-col gap-5">
               <p className="text-gray-700">
-                This is a landing page of DigitalOcean which I build during my{" "}
+                I built this landing page of DigitalOcean during my{" "}
                 <a
                   href="https://github.com/thisisharsh7/14-days-of-Clones"
                   target="_blank"
@@ -66,8 +66,7 @@ export default function Projects() {
             </h1>
             <div className="flex flex-col gap-5">
               <p className="text-gray-600">
-                It is a netflix clone which is a first clone made by me during
-                my{" "}
+                As part of my{" "}
                 <a
                   href="https://github.com/thisisharsh7/14-days-of-Clones"
                   target="_blank"
@@ -75,7 +74,7 @@ export default function Projects() {
                 >
                   14 days of Clones
                 </a>{" "}
-                challenge.
+                challenge, I created a Netflix clone as my first clone.
               </p>
               <ul className="flex flex-wrap gap-4">
                 <li className="bg-gray-200 py-1 px-2 rounded-sm text-sm font-thin text-gray-700 border-[1.4px] border-gray-800">
@@ -125,7 +124,7 @@ export default function Projects() {
                 >
                   30 days of Code challenge
                 </a>
-                . It is a project from front-end mentor platform.
+                . A front-end mentor platform project.
               </p>
               <ul className="flex flex-wrap gap-4">
                 <li className="bg-gray-200 py-1 px-2 rounded-sm text-sm font-thin text-gray-700 border-[1.4px] border-gray-800">

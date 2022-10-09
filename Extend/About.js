@@ -70,13 +70,10 @@ export default function About() {
         <p className="flex flex-col gap-5">
           <span>
             Hello! I'm Harsh, 2nd year student at Maharaja Agrasen Institute of
-            Technology, New Delhi, India. Enjoys running, playing sudoko,
-            coding, and surfing tech topics on internet.
+            Technology, New Delhi, India. Enjoys running, playing sudoko, coding, and surfing the internet.
           </span>
           <span>
-            I'm open to Job opportunities where I can learn, contribute and
-            grow. If you have a good opportunity that matches my skills and
-            experience then do contact me.
+          I am open to opportunities where I am able to learn, contribute, and grow. Feel free to <a href="#contanct" className="underline text-gray-500">contact</a> me if you have a suitable opportunity that matches my skills.
           </span>
         </p>
       </div>
