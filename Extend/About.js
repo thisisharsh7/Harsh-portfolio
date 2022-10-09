@@ -1,14 +1,14 @@
 import Image from "next/image";
-import twind from "../public/Images/tailwind.svg";
-import saas from "../public/Images/saas.svg";
-import jscript from "../public/Images/javascript.png";
-import react from "../public/Images/react.svg";
-import nextjs from "../public/Images/nextjs.png";
-import git from "../public/Images/git.png";
-import clang from "../public/Images/clangu.png";
-import cplus from "../public/Images/cplus.png";
-import redux from "../public/Images/redux.svg";
-import firebase from "../public/Images/firebase.png";
+import twind from "./Images/tailwind.svg";
+import saas from "./Images/saas.svg";
+import jscript from "./Images/javascript.png";
+import react from "./Images/react.svg";
+import nextjs from "./Images/nextjs.png";
+import git from "./Images/git.png";
+import clang from "./Images/clangu.png";
+import cplus from "./Images/cplus.png";
+import redux from "./Images/redux.svg";
+import firebase from "./Images/firebase.png";
 
 export default function About() {
   return (
@@ -70,10 +70,16 @@ export default function About() {
         <p className="flex flex-col gap-5">
           <span>
             Hello! I'm Harsh, 2nd year student at Maharaja Agrasen Institute of
-            Technology, New Delhi, India. Enjoys running, playing sudoko, coding, and surfing the internet.
+            Technology, New Delhi, India. Enjoys running, playing sudoko,
+            coding, and surfing the internet.
           </span>
           <span>
-          I am open to opportunities where I am able to learn, contribute, and grow. Feel free to <a href="#contanct" className="underline text-gray-500">contact</a> me if you have a suitable opportunity that matches my skills.
+            I am open to opportunities where I am able to learn, contribute, and
+            grow. Feel free to{" "}
+            <a href="#contanct" className="underline text-gray-500">
+              contact
+            </a>{" "}
+            me if you have a suitable opportunity that matches my skills.
           </span>
         </p>
       </div>

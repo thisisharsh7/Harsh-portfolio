@@ -1,4 +1,4 @@
-import harsh from "../public/Images/harsh-2.jpg";
+import harsh from "./Images/harsh.jpg";
 import Image from "next/image";
 export default function Intro() {
   return (

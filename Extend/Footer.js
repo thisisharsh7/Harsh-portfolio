@@ -1,9 +1,9 @@
 import Image from "next/image";
-import linkedInIc from "../public/Images/linkedInIc.svg";
-import gitHubIc from "../public/Images/gitIc.svg";
-import mailIc from "../public/Images/mailIc.svg";
-import twittIc from "../public/Images/twittIc.svg";
-import instaIc from "../public/Images/instaIc.svg";
+import linkedInIc from "./Images/linkedInIc.svg";
+import gitHubIc from "./Images/gitIc.svg";
+import mailIc from "./Images/mailIc.svg";
+import twittIc from "./Images/twittIc.svg";
+import instaIc from "./Images/instaIc.svg";
 
 export default function Footer() {
   return (

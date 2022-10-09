@@ -1,6 +1,6 @@
-import digitalOcean from "../public/Images/digitalocean.jpg";
-import netflix from "../public/Images/netflix.jpg";
-import world from "../public/Images/world.jpg";
+import digitalOcean from "./Images/digitalocean.jpg";
+import netflix from "./Images/netflix.jpg";
+import world from "./Images/world.jpg";
 import Image from "next/image";
 
 export default function Projects() {
