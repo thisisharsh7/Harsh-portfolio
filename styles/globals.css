@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;800;900&display=swap");
-:root{
-  --scale-till : 0;
+:root {
+  --scale-till: 0;
 }
 * {
   margin: 0;
@@ -11,9 +11,6 @@
 }
 body {
   background-color: rgb(244, 244, 244);
-  transition: all;
-  transform: scale(var(--scale-till));
-  transition-duration: 1.8s;
   max-width: 1400px;
   min-height: 100vh;
   margin: 0 auto;
@@ -78,4 +75,9 @@ body {
   100% {
     background-color: rgb(110, 110, 110);
   }
+}
+.starting {
+  transition: all;
+  transition-duration: 1.8s;
+  transform: scale(var(--scale-till));
 }

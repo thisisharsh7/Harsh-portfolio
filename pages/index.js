@@ -4,12 +4,11 @@ import Projects from "../Extend/Projects";
 import Contact from "../Extend/Contact";
 import Bookmarks from "../Extend/Bookmarks";
 import { useEffect } from "react";
+import { useRouter } from "next/router";
 
 export default function Home() {
-  
+  const route = useRouter();
   useEffect(()=>{
-    var k = getComputedStyle(document.body).getPropertyValue('--scale-till');
-    console.log(k);
     document.documentElement.style.setProperty('--scale-till',1);
   },[])
   return (
