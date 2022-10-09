@@ -70,10 +70,10 @@ export default function Header() {
             <a
               href="#"
               onClick={() => {
-                myFunction("#contanct");
+                myFunction("#contact");
               }}
             >
-              Contanct
+              Contact
             </a>
           </li>
           <li className="border-2 border-gray-400 px-2 py-1 cursor-pointer text-gray-400  transition-all duration-500 hover:border-black hover:text-black">

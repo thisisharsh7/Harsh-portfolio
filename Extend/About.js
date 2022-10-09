@@ -76,7 +76,7 @@ export default function About() {
           <span>
             I am open to opportunities where I am able to learn, contribute, and
             grow. Feel free to{" "}
-            <a href="#contanct" className="underline text-gray-500">
+            <a href="#contact" className="underline text-gray-500">
               contact
             </a>{" "}
             me if you have a suitable opportunity that matches my skills.
