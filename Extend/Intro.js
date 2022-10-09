@@ -14,14 +14,14 @@ export default function Intro() {
         </p>
       </div>
       <div className="sm:w-36 max-w-md text-center ">
-      <Image
-        src={harsh}
-        className="rounded-full"
-        width="150"
-        height="150"
-        alt="harsh-profile"
-        priority={true}
-      />
+        <Image
+          src={harsh}
+          className="rounded-full"
+          width="150"
+          height="150"
+          alt="harsh-profile"
+          priority={true}
+        />
       </div>
     </section>
   );

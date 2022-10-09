@@ -2,9 +2,9 @@ import { useEffect, useRef } from "react";
 
 export default function Contanct() {
   const formInput = useRef();
-  useEffect(()=>{
+  useEffect(() => {
     formInput.current.reset();
-  },[])
+  }, []);
   return (
     <section className="w-full flex flex-col gap-12 max-w-screen-md">
       <div id="contanct" className="h-5"></div>
