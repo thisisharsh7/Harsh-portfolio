@@ -25,16 +25,16 @@ export default function Header() {
           <div
             className={
               Box
-                ? "transition-all duration-600 menu before:rotate-45 after:-rotate-45 before:top-3.5 after:top-3.5 w-0"
-                : " transition-all duration-700 h-2 w-2/3 bg-gray-500 menu before:bottom-0 after:top-0"
+                ? "transition-all duration-700 menu before:rotate-45 after:-rotate-45 before:top-3.5 after:top-3.5 w-0"
+                : " transition-all duration-500 h-2 w-2/3 bg-gray-500 menu before:bottom-0 after:top-0"
             }
           ></div>
         </div>
         <ul
           className={
             Box
-              ? " transition-all duration-500 flex sm:flex-row flex-col gap-10 items-center sm:relative absolute top-0 right-11  left-7 sm:bg-transparent bg-gray-100 px-3 py-5 z-10 sm:shadow-none shadow-md shadow-gray-700"
-              : " transition-all duration-300 flex sm:shadow-none shadow-sm sm:flex-row flex-col sm:gap-10 gap-0 sm:items-center items-end bg-transparent sm:relative absolute right-0 top-0 sm:z-10 -z-10 sm:opacity-100 opacity-0 "
+              ? " transition-all duration-700 flex sm:flex-row flex-col gap-10 items-center sm:relative absolute top-0 right-11  left-7 sm:bg-transparent bg-gray-100 px-3 py-5 z-10 sm:shadow-none shadow-md shadow-gray-700"
+              : " transition-all duration-150 flex sm:shadow-none shadow-sm sm:flex-row flex-col sm:gap-10 gap-0 sm:items-center items-end bg-transparent sm:relative absolute right-0 top-0 sm:z-10 -z-10 sm:opacity-100 opacity-0 "
           }
         >
           <li className="cursor-pointer  transition-all duration-300 hover:text-black text-gray-400">
@@ -52,8 +52,8 @@ export default function Header() {
             <a
               href="#about"
               onClick={() => {
-                  showBox(false);
-                }}
+                showBox(false);
+              }}
             >
               About
             </a>
@@ -62,8 +62,8 @@ export default function Header() {
             <a
               href="#project"
               onClick={() => {
-                  showBox(false);
-                }}
+                showBox(false);
+              }}
             >
               Projects
             </a>
@@ -72,8 +72,8 @@ export default function Header() {
             <a
               href="#contact"
               onClick={() => {
-                  showBox(false);
-                }}
+                showBox(false);
+              }}
             >
               Contact
             </a>
