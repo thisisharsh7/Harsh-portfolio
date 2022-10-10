@@ -1,10 +1,13 @@
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export default function Header() {
   const [Box, showBox] = useState(false);
   const route = useRouter();
+  useEffect(()=>{
+    setTimeout(()=>{route.push("/");},100);
+  },[])
   return (
     <header className=" sm:px-8 sm:py-9 pt-8 pb-4 px-4 flex max-w-[800px] mx-auto   justify-center min-w-[190px] bg-gray-100 shadow-sm sticky top-0 z-20">
       <nav className="flex  items-center w-full justify-between max-w-screen-md  relative ">
