@@ -11,6 +11,7 @@
 }
 body {
   background-color: rgb(244, 244, 244);
+  overflow-x: hidden;
   max-width: 1400px;
   min-height: 100vh;
   margin: 0 auto;
@@ -80,4 +81,31 @@ body {
   transition: all;
   transition-duration: 1.8s;
   transform: scale(var(--scale-till));
+}
+.swipe.swipe-right {
+  position: relative;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.swipe.swipe-left {
+  position: relative;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.swipe.swipe-up {
+  position: relative;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.swipe.swipe-left.active,
+.swipe.swipe-right.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.swipe.swipe-up.active {
+  transform: translateY(0);
+  opacity: 1;
 }

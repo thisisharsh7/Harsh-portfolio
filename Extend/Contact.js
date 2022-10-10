@@ -22,7 +22,7 @@ export default function Contact() {
             <input
               required={true}
               type="text"
-              className="py-1 px-3 focus-within:bg-gray-100 text-gray-500 outline-none shadow-md focus-within:shadow-black focus-within:shadow-sm w-full"
+              className="py-1 px-3 focus-within:bg-gray-100 text-gray-500 outline-none shadow-md focus-within:shadow-black focus-within:shadow-sm w-full swipe swipe-left"
               placeholder="Name"
               name="username"
             />
@@ -30,7 +30,7 @@ export default function Contact() {
             <input
               required={true}
               type="email"
-              className="py-1 px-3 focus-within:bg-gray-100 text-gray-500 outline-none shadow-md focus-within:shadow-black focus-within:shadow-sm w-full"
+              className="py-1 px-3 focus-within:bg-gray-100 text-gray-500 outline-none shadow-md focus-within:shadow-black focus-within:shadow-sm w-full swipe swipe-right"
               placeholder="xyz@email.com"
               name="email"
             />
@@ -39,12 +39,12 @@ export default function Contact() {
             required={true}
             name="subject"
             type="text"
-            className="w-full py-1 px-3 focus-within:bg-gray-100 text-gray-500 outline-none shadow-md  focus-within:shadow-black focus-within:shadow-sm"
+            className="w-full py-1 px-3 focus-within:bg-gray-100 text-gray-500 outline-none shadow-md  focus-within:shadow-black focus-within:shadow-sm swipe swipe-left"
             placeholder="Subject"
           />
           <textarea
             required={true}
-            className="w-full h-40 py-1 px-3 focus-within:bg-gray-100 text-gray-500 outline-none shadow-md focus-within:shadow-black focus-within:shadow-sm resize-none"
+            className="w-full h-40 py-1 px-3 focus-within:bg-gray-100 text-gray-500 outline-none shadow-md focus-within:shadow-black focus-within:shadow-sm resize-none swipe swipe-right"
             name="message"
           />
           <button
