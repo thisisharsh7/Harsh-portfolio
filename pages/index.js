@@ -4,12 +4,10 @@ import Projects from "../Extend/Projects";
 import Contact from "../Extend/Contact";
 import Bookmarks from "../Extend/Bookmarks";
 import { useEffect } from "react";
-import { useRouter } from "next/router";
 
 export default function Home() {
-  const route = useRouter();
   useEffect(() => {
-    document.documentElement.style.setProperty("--scale-till", 1);
+    document.body.style.setProperty("--scale-till", 1);
     window.addEventListener("scroll", () => {
       var swipe = document.querySelectorAll(".swipe");
       for (var i = 0; i < swipe.length; i++) {

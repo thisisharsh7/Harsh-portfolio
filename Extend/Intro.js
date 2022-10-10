@@ -16,7 +16,7 @@ export default function Intro() {
       <div className="sm:w-36 max-w-md text-center starting">
         <Image
           src={harsh}
-          className="rounded-full"
+          className="rounded-full "
           width="150"
           height="150"
           alt="harsh-profile"

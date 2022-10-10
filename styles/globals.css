@@ -17,6 +17,9 @@ body {
   margin: 0 auto;
   font-family: "Rubik", sans-serif;
 }
+main{
+  overflow-x: hidden;
+}
 .intro h1 {
   font-weight: bolder;
 }
