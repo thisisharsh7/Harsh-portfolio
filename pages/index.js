@@ -10,6 +10,7 @@ export default function Home() {
   const route = useRouter();
   useEffect(()=>{
     document.body.style.setProperty('--scale-till',1);
+
   },[])
   return (
     <main className="flex flex-col gap-10 items-center sm:p-8 p-6">
