@@ -1,19 +1,20 @@
-import Router, { useRouter } from "next/router";
+import { useRouter } from "next/router";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Header() {
   const [Box, showBox] = useState(false);
   const route = useRouter();
-
   function myFunction(link) {
     showBox(false);
+
     setTimeout(() => {
       route.push(link);
     }, 400);
   }
   return (
-    <header className=" sm:px-8 sm:py-10 pt-8 pb-4 px-4 flex justify-center min-w-[190px]">
-      <nav className="flex  items-center w-full justify-between max-w-screen-md relative">
+    <header className=" sm:px-8 sm:py-10 pt-8 pb-4 px-4 flex max-w-[800px] mx-auto   justify-center min-w-[190px] bg-gray-100 shadow-sm sticky top-0 z-20">
+      <nav className="flex  items-center w-full justify-between max-w-screen-md  relative ">
         <div className="logo relative w-5"></div>
         <div
           className="w-9 h-9 sm:hidden gap-1.5 flex items-center cursor-pointer relative "
@@ -36,42 +37,43 @@ export default function Header() {
               : " transition-all duration-300 flex sm:shadow-none shadow-sm sm:flex-row flex-col sm:gap-10 gap-0 sm:items-center items-end bg-transparent sm:relative absolute right-0 top-0 sm:z-10 -z-10 sm:opacity-100 opacity-0 "
           }
         >
-          <li className="cursor-pointer text-gray-400  transition-all duration-300 hover:text-black ">
-            <a
-              href="#"
-              onClick={() => {
-                showBox(false);
-              }}
-            >
-              Home
-            </a>
+          <li className="cursor-pointer  transition-all duration-300 hover:text-black text-gray-400">
+            <Link href="/">
+              <a
+                onClick={() => {
+                  showBox(false);
+                }}
+              >
+                Home
+              </a>
+            </Link>
           </li>
-          <li className="cursor-pointer text-gray-400  transition-all duration-300 hover:text-black">
+          <li className="cursor-pointer transition-all duration-300 hover:text-black text-gray-400">
             <a
-              href="#"
+              href="#about"
               onClick={() => {
-                myFunction("#about");
-              }}
+                  showBox(false);
+                }}
             >
               About
             </a>
           </li>
-          <li className="cursor-pointer text-gray-400  transition-all duration-300 hover:text-black">
+          <li className="cursor-pointer   transition-all duration-300 hover:text-black text-gray-400">
             <a
-              href="#"
+              href="#project"
               onClick={() => {
-                myFunction("#project");
-              }}
+                  showBox(false);
+                }}
             >
               Projects
             </a>
           </li>
-          <li className="cursor-pointer text-gray-400  transition-all duration-300 hover:text-black">
+          <li className="cursor-pointer transition-all duration-300 hover:text-black text-gray-400">
             <a
-              href="#"
+              href="#contact"
               onClick={() => {
-                myFunction("#contact");
-              }}
+                  showBox(false);
+                }}
             >
               Contact
             </a>

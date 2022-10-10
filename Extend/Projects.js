@@ -13,7 +13,7 @@ export default function Projects() {
       <div className="flex flex-col gap-20 pt-16">
         <div className="flex gap-10 sm:flex-row flex-col">
           <div className=" flex shadow-black shadow-lg">
-            <Image priority={true} src={digitalOcean} />
+            <Image alt="project" priority={true} src={digitalOcean} />
           </div>
           <div className="flex flex-col gap-4 w-full md:max-w-[20rem]">
             <h1 className="text-base font-bold bg-blue-200 rounded-lg p-3 text-gray-600 flex gap-3 sm:w-[20rem] w-full ">
@@ -103,12 +103,12 @@ export default function Projects() {
             </div>
           </div>
           <div className=" flex shadow-black shadow-lg">
-            <Image priority={true} src={netflix} />
+            <Image alt="project" priority={true} src={netflix} />
           </div>
         </div>
         <div className="flex gap-10 sm:flex-row flex-col">
           <div className=" flex shadow-black shadow-lg">
-            <Image priority={true} src={world} />
+            <Image alt="project" priority={true} src={world} />
           </div>
           <div className="flex flex-col gap-4 w-full md:max-w-[20rem]">
             <h1 className="text-base font-bold bg-orange-200 rounded-lg p-3 text-gray-600 flex gap-3 sm:w-[20rem] w-full">

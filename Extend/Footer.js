@@ -54,7 +54,10 @@ export default function Footer() {
       </div>
       <p className="text-center text-sm">
         Developed by <span> Harsh Kumar</span> with <span>💖</span>
+        <br />
+        <a href="https://github.com/thisisharsh7/Harsh-portfolio" target="_blank" className="font-bold">{'<Code />'}</a>
       </p>
+      
     </footer>
   );
 }

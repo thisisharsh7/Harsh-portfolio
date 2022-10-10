@@ -19,50 +19,50 @@ export default function About() {
         </h1>
         <ul className="flex flex-wrap gap-10 justify-center skill-list items-center">
           <li>
-            <Image priority={true} src={twind} alt="twind" width={70} height={75} />
+            <Image  src={twind} alt="twind" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">
               tailwindcss
             </span>
           </li>
           <li>
-            <Image priority={true} src={saas} alt="saas" width={70} height={75} />
+            <Image  src={saas} alt="saas" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">Saas/Scss</span>
           </li>
           <li>
-            <Image priority={true} src={jscript} alt="jscript" width={70} height={75} />
+            <Image  src={jscript} alt="jscript" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">Javascript</span>
           </li>
           <li>
-            <Image priority={true} src={react} alt="react" width={70} height={75} />
+            <Image  src={react} alt="react" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">React</span>
           </li>
           <li>
-            <Image priority={true} src={nextjs} alt="nextjs" width={70} height={75} />
+            <Image  src={nextjs} alt="nextjs" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">Next Js</span>
           </li>
           <li>
-            <Image priority={true} src={git} alt="git" width={70} height={75} />
+            <Image  src={git} alt="git" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">Git</span>
           </li>
           <li>
-            <Image priority={true} src={clang} alt="clang" width={70} height={75} />
+            <Image  src={clang} alt="clang" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">C</span>
           </li>
           <li>
-            <Image priority={true} src={cplus} alt="cplus" width={70} height={75} />
+            <Image  src={cplus} alt="cplus" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">C++</span>
           </li>
           <li>
-            <Image priority={true} src={redux} alt="redux" width={70} height={75} />
+            <Image  src={redux} alt="redux" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">Redux</span>
           </li>
           <li>
-            <Image priority={true} src={firebase} alt="firebase" width={70} height={75} />
+            <Image  src={firebase} alt="firebase" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">Firebase</span>
           </li>
         </ul>
       </div>
-      <div id="about" className="w-full h-16"></div>
+      <div id="about" className="w-full h-14"></div>
       <div className="  flex flex-col gap-10 ">
         <h1 className="text-3xl relative font-semibold before:content-[''] before:w-full before:h-0.5 before:bottom-0 before:bg-black before:absolute ">
           About me
