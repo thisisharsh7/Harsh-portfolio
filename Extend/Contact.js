@@ -44,6 +44,7 @@ export default function Contact() {
           />
           <textarea
             required={true}
+            placeholder="Message"
             className="w-full h-40 py-1 px-3 focus-within:bg-gray-100 text-gray-500 outline-none shadow-md focus-within:shadow-black focus-within:shadow-sm resize-none swipe swipe-right"
             name="message"
           />
