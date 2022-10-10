@@ -24,7 +24,7 @@ export default function Home() {
     });
   }, []);
   return (
-    <main className="flex flex-col gap-10 items-center sm:p-8 p-3">
+    <main className="flex flex-col gap-10 items-center sm:p-8 p-3.5">
       <Intro />
       <About />
       <Projects />

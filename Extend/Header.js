@@ -34,57 +34,62 @@ export default function Header() {
           className={
             Box
               ? " transition-all duration-700 flex sm:flex-row flex-col gap-10 items-center sm:relative absolute top-0 right-11  left-7 sm:bg-transparent bg-gray-100 px-3 py-5 z-10 sm:shadow-none shadow-md shadow-gray-700"
-              : " transition-all duration-150 flex sm:shadow-none shadow-sm sm:flex-row flex-col sm:gap-10 gap-0 sm:items-center items-end bg-transparent sm:relative absolute right-0 top-0 sm:z-10 -z-10 sm:opacity-100 opacity-0 "
+              : " transition-all duration-1000 flex sm:shadow-none shadow-sm sm:flex-row flex-col sm:gap-10 gap-0 items-center  bg-transparent sm:relative absolute right-11 left-7 -top-44 sm:z-10 -z-20 sm:opacity-100  "
           }
         >
-          <li className="cursor-pointer  transition-all duration-300 hover:text-black text-gray-400">
+          <li>
             <Link href="/">
               <a
                 onClick={() => {
                   showBox(false);
                 }}
+                className="cursor-pointer  transition-all duration-300 hover:text-black text-gray-400"
               >
                 Home
               </a>
             </Link>
           </li>
-          <li className="cursor-pointer transition-all duration-300 hover:text-black text-gray-400">
+          <li>
             <a
               href="#about"
               onClick={() => {
                 showBox(false);
               }}
+              className="cursor-pointer  transition-all duration-300 hover:text-black text-gray-400"
             >
               About
             </a>
           </li>
-          <li className="cursor-pointer   transition-all duration-300 hover:text-black text-gray-400">
+          <li>
             <a
               href="#project"
               onClick={() => {
                 showBox(false);
               }}
+              className="cursor-pointer  transition-all duration-300 hover:text-black text-gray-400"
             >
               Projects
             </a>
           </li>
-          <li className="cursor-pointer transition-all duration-300 hover:text-black text-gray-400">
+          <li>
             <a
               href="#contact"
               onClick={() => {
                 showBox(false);
               }}
+              className="cursor-pointer  transition-all duration-300 hover:text-black text-gray-400 "
             >
               Contact
             </a>
           </li>
-          <li className="border-2 border-gray-400 px-2 py-1 cursor-pointer text-gray-400  transition-all duration-500 hover:border-black hover:text-black">
+          <li>
             <a
               href="https://drive.google.com/file/d/1xPieQ4A12qqdDKeHrYhTBcS6jvjgQYJn/view"
               target="_blank"
               onClick={() => {
                 showBox(false);
               }}
+              className="border-2 border-gray-400 px-2 py-1 cursor-pointer text-gray-400  transition-all duration-500 hover:border-black hover:text-black"
             >
               Resume
             </a>

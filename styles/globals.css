@@ -46,7 +46,7 @@ main {
   background-color: rgb(104, 104, 104);
   position: absolute;
   transition: all;
-  transition-duration: 500ms;
+  transition-duration: 600ms;
 }
 .menu:after {
   content: "";
@@ -55,7 +55,7 @@ main {
   background-color: rgb(104, 104, 104);
   position: absolute;
   transition: all;
-  transition-duration: 400ms;
+  transition-duration: 600ms;
 }
 .skill-list li {
   display: flex;
@@ -65,7 +65,7 @@ main {
   padding: 1rem;
 }
 .liveAnim {
-  animation: blink 800ms infinite alternate linear;
+  animation: blink 700ms infinite alternate linear;
 }
 @keyframes blink {
   100% {
@@ -73,7 +73,7 @@ main {
   }
 }
 .repoAnim {
-  animation: bink 800ms infinite alternate linear;
+  animation: bink 700ms infinite alternate linear;
 }
 @keyframes bink {
   100% {
