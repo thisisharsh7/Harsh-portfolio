@@ -39,7 +39,7 @@ export default function Contact() {
             required={true}
             name="subject"
             type="text"
-            className="w-full py-1 px-3 focus-within:bg-gray-100 text-gray-500 outline-none shadow-md focus-within:shadow-black focus-within:shadow-sm"
+            className="w-full py-1 px-3 focus-within:bg-gray-100 text-gray-500 outline-none shadow-md  focus-within:shadow-black focus-within:shadow-sm"
             placeholder="Subject"
           />
           <textarea

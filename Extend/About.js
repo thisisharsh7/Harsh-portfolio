@@ -30,14 +30,14 @@ export default function About() {
           </li>
           <li>
             <Image  src={jscript} alt="jscript" width={70} height={75} />
-            <span className="bg-gray-200 py-1 px-2 rounded-md">Javascript</span>
+            <span className="bg-gray-200 py-1 px-2 rounded-md">JavaScript</span>
           </li>
           <li>
             <Image  src={react} alt="react" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">React</span>
           </li>
           <li>
-            <Image  src={nextjs} alt="nextjs" width={70} height={75} />
+            <Image  src={nextjs} alt="nextjs" width={80} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">Next Js</span>
           </li>
           <li>
@@ -45,11 +45,11 @@ export default function About() {
             <span className="bg-gray-200 py-1 px-2 rounded-md">Git</span>
           </li>
           <li>
-            <Image  src={clang} alt="clang" width={70} height={75} />
+            <Image  src={clang} alt="clang" width={75} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">C</span>
           </li>
           <li>
-            <Image  src={cplus} alt="cplus" width={70} height={75} />
+            <Image  src={cplus} alt="cplus" width={75} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">C++</span>
           </li>
           <li>
