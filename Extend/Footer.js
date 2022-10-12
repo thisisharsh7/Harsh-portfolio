@@ -19,12 +19,17 @@ export default function Footer() {
           <h1 className="text-xl text-gray-700 font-bold">Socials</h1>
           <ul className="flex flex-wrap gap-5">
             <li className="cursor-pointer h-7 hover:-translate-y-1 transition-all duration-500">
-              <a href="https://github.com/thisisharsh7" target="_blank">
+              <a
+                aria-label="GitHub"
+                href="https://github.com/thisisharsh7"
+                target="_blank"
+              >
                 <Image src={gitHubIc} alt="" width={30} height={30} />
               </a>
             </li>
             <li className="cursor-pointer h-7 hover:-translate-y-1 transition-all duration-500">
               <a
+                aria-label="LinkedIn"
                 href="https://www.linkedin.com/in/thisisharsh7/"
                 target="_blank"
               >
@@ -32,17 +37,26 @@ export default function Footer() {
               </a>
             </li>
             <li className="cursor-pointer h-7 hover:-translate-y-1 transition-all duration-500">
-              <a href="mailto:9u.harsh@gmail.com" target="_blank">
+              <a
+                aria-label="Email"
+                href="mailto:9u.harsh@gmail.com"
+                target="_blank"
+              >
                 <Image src={mailIc} alt="" width={30} height={30} />
               </a>
             </li>
             <li className="cursor-pointer h-7 hover:-translate-y-1 transition-all duration-500">
-              <a href="https://twitter.com/thisisharsh7" target="_blank">
+              <a
+                aria-label="Twitter"
+                href="https://twitter.com/thisisharsh7"
+                target="_blank"
+              >
                 <Image src={twittIc} alt="" width={30} height={30} />
               </a>
             </li>
             <li className="cursor-pointer h-7 hover:-translate-y-1 transition-all duration-500">
               <a
+                aria-label="Instagram"
                 href="https://www.instagram.com/thisishars_h/?igshid=ymmymta2m2y%3D"
                 target="_blank"
               >
@@ -55,9 +69,14 @@ export default function Footer() {
       <p className="text-center text-sm">
         Developed by <span> Harsh Kumar</span> with <span>💖</span>
         <br />
-        <a href="https://github.com/thisisharsh7/Harsh-portfolio" target="_blank" className="font-bold">{'<Code />'}</a>
+        <a
+          href="https://github.com/thisisharsh7/Harsh-portfolio"
+          target="_blank"
+          className="font-bold"
+        >
+          {"<Code />"}
+        </a>
       </p>
-      
     </footer>
   );
 }
