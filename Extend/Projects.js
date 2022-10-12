@@ -12,7 +12,7 @@ export default function Projects() {
       </h1>
       <div className="flex flex-col gap-20 pt-16">
         <div className="flex gap-10 sm:flex-row flex-col ">
-          <div className="flex shadow-black shadow-lg swipe swipe-left">
+          <div className="flex shadow-black shadow-lg swipe swipe-left max-w-[24rem]">
             <Image alt="" priority={true} src={digitalOcean} />
           </div>
           <div className="flex flex-col gap-4 w-full md:max-w-[20rem] swipe swipe-right">
@@ -102,12 +102,12 @@ export default function Projects() {
               </ul>
             </div>
           </div>
-          <div className="flex shadow-black shadow-lg swipe swipe-right">
-            <Image alt="" priority={true} src={netflix} />
+          <div className="flex shadow-black shadow-lg swipe swipe-right max-w-[24rem]">
+            <Image alt="" priority={true} src={netflix}/>
           </div>
         </div>
         <div className="flex gap-10 sm:flex-row flex-col">
-          <div className=" flex shadow-black shadow-lg swipe swipe-left">
+          <div className=" flex shadow-black shadow-lg swipe swipe-left max-w-[24rem]">
             <Image alt="" priority={true} src={world} />
           </div>
           <div className="flex flex-col gap-4 w-full md:max-w-[20rem] swipe swipe-right">
