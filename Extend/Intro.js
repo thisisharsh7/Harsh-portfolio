@@ -10,17 +10,15 @@ export default function Intro() {
           </h1>
           <p className="text-xl text-gray-700">Front-End Web Developer</p>
         </div>
-        <div className="max-w-xl text-gray-700">
-          <p>I build things for the web, review other people's code</p> as part of the
-         <p> Frontend Mentor community and make suggestions for improvements.</p>
-        </div>
+        <p className="max-w-xl">
+          <span className="text-gray-700">I build things for the web, review other people's code as part </span><span className="text-gray-700"> of the
+          Frontend Mentor community and make suggestions for improvements.</span>
+        </p>
       </div>
-      <div className="sm:w-36 max-w-md text-center starting">
+      <div className="sm:w-36 w-36 text-center starting">
         <Image
           src={harsh}
           className="rounded-full "
-          width="150"
-          height="150"
           alt=""
           priority={true}
         />
