@@ -2,7 +2,6 @@ import Intro from "../Extend/Intro";
 import About from "../Extend/About";
 import Projects from "../Extend/Projects";
 import Contact from "../Extend/Contact";
-import Bookmarks from "../Extend/Bookmarks";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -29,7 +28,6 @@ export default function Home() {
       <About />
       <Projects />
       <Contact />
-      <Bookmarks />
     </main>
   );
 }

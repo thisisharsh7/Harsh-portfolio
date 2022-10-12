@@ -19,45 +19,45 @@ export default function About() {
         </h1>
         <ul className="flex flex-wrap gap-10 justify-center skill-list items-center">
           <li className="swipe swipe-up">
-            <Image src={twind} alt="twind" width={70} height={75} />
+            <Image src={twind} alt="" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">
               tailwindcss
             </span>
           </li>
           <li className="swipe swipe-up">
-            <Image src={saas} alt="saas" width={70} height={75} />
+            <Image src={saas} alt="" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">Saas/Scss</span>
           </li>
           <li className="swipe swipe-up">
-            <Image src={jscript} alt="jscript" width={70} height={75} />
+            <Image src={jscript} alt="" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">JavaScript</span>
           </li>
           <li className="swipe swipe-up">
-            <Image src={react} alt="react" width={70} height={75} />
+            <Image src={react} alt="" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">React</span>
           </li>
           <li className="swipe swipe-up">
-            <Image src={nextjs} alt="nextjs" width={80} height={75} />
+            <Image src={nextjs} alt="" width={80} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">Next Js</span>
           </li>
           <li className="swipe swipe-up">
-            <Image src={git} alt="git" width={70} height={75} />
+            <Image src={git} alt="" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">Git</span>
           </li>
           <li className="swipe swipe-up">
-            <Image src={clang} alt="clang" width={75} height={75} />
+            <Image src={clang} alt="" width={75} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">C</span>
           </li>
           <li className="swipe swipe-up">
-            <Image src={cplus} alt="cplus" width={75} height={75} />
+            <Image src={cplus} alt="" width={75} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">C++</span>
           </li>
           <li className="swipe swipe-up">
-            <Image src={redux} alt="redux" width={70} height={75} />
+            <Image src={redux} alt="" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">Redux</span>
           </li>
           <li className="swipe swipe-up">
-            <Image src={firebase} alt="firebase" width={70} height={75} />
+            <Image src={firebase} alt="" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">Firebase</span>
           </li>
         </ul>
