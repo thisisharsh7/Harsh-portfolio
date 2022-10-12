@@ -10,10 +10,10 @@ export default function Intro() {
           </h1>
           <p className="text-xl text-gray-700">Front-End Web Developer</p>
         </div>
-        <p className="max-w-xl text-gray-700">
-          I build things for the web, review other people's code as part of the
-          Frontend Mentor community and make suggestions for improvements.
-        </p>
+        <div className="max-w-xl text-gray-700">
+          <p>I build things for the web, review other people's code</p> as part of the
+         <p> Frontend Mentor community and make suggestions for improvements.</p>
+        </div>
       </div>
       <div className="sm:w-36 max-w-md text-center starting">
         <Image
