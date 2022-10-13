@@ -138,7 +138,7 @@ export default function Projects() {
                 </li>
                 <li className="bg-green-700 py-1 px-2 rounded-sm text-sm font-thin text-white border-[1.4px] border-gray-800 liveAnim">
                   <a
-                    href="https://spectacular-lolly-481d06.netlify.app/"
+                    href="https://yes-country.netlify.app/"
                     target="_blank"
                   >
                     Live
