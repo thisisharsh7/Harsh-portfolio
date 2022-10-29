@@ -70,7 +70,7 @@ export default function About() {
         <p className="flex flex-col gap-5">
           <span className="swipe swipe-left">
             Hello! I'm Harsh, 2nd year student at Maharaja Agrasen Institute of
-            Technology, New Delhi, India. Enjoys running, playing sudoko,
+            Technology, New Delhi, India. Enjoys running, playing sudoku,
             coding, and surfing the internet.
           </span>
           <span className="swipe swipe-right">
