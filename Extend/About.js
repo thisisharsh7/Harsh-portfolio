@@ -9,6 +9,10 @@ import clang from "./Images/clangu.png";
 import cplus from "./Images/cplus.png";
 import redux from "./Images/redux.svg";
 import firebase from "./Images/firebase.png";
+import mongo from "./Images/mongodb.jpg";
+import node from "./Images/nodeJs.png";
+import React from "react";
+
 
 export default function About() {
   return (
@@ -59,6 +63,14 @@ export default function About() {
           <li className="swipe swipe-up">
             <Image src={firebase} alt="" width={70} height={75} />
             <span className="bg-gray-200 py-1 px-2 rounded-md">Firebase</span>
+          </li>
+          <li className="swipe swipe-up">
+            <Image src={mongo} alt="" width={70} height={75} />
+            <span className="bg-gray-200 py-1 px-2 rounded-md">MongoDB</span>
+          </li>
+          <li className="swipe swipe-up">
+            <Image src={node} alt="" width={70} height={75} />
+            <span className="bg-gray-200 py-1 px-2 rounded-md">NodeJs</span>
           </li>
         </ul>
       </div>
