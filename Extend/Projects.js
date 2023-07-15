@@ -83,6 +83,9 @@ export default function Projects() {
                   NextJs
                 </li>
                 <li className="bg-gray-200 py-1 px-2 rounded-sm text-sm font-thin text-gray-700 border-[1.4px] border-gray-800">
+                  React
+                </li>
+                <li className="bg-gray-200 py-1 px-2 rounded-sm text-sm font-thin text-gray-700 border-[1.4px] border-gray-800">
                   CSS
                 </li>
                 <li className="bg-green-700 py-1 px-2 rounded-sm text-sm font-thin text-white border-[1.4px] border-gray-800 liveAnim">
