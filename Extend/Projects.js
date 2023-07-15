@@ -64,7 +64,7 @@ export default function Projects() {
 
           <div className="flex flex-col gap-4 w-full md:max-w-[20rem] swipe swipe-left">
             <h1 className="text-base font-bold bg-orange-200 rounded-lg p-3 text-gray-600 flex gap-3 sm:w-[20rem] w-full">
-              <span className="text-black">02. </span>Fontend Note
+              <span className="text-black">02. </span>Frontend Note
             </h1>
             <div className="flex flex-col gap-5">
               <p className="text-gray-600">
