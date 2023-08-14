@@ -8,7 +8,7 @@ export default function Intro() {
           <h1 className="font-bold sm:text-5xl text-4xl starting">
             Harsh Kumar
           </h1>
-          <p className="text-xl text-gray-700">Front-End Web Developer</p>
+          <p className="text-xl text-gray-700">MERN Developer</p>
         </div>
         <p className="max-w-xl">
           <span className="text-gray-700">I build things for the web, review other people's code as part </span><span className="text-gray-700"> of the
