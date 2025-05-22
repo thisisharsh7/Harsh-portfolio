@@ -2,113 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;800;900&display=swap");
+
 :root {
   --scale-till: 0;
 }
+
 * {
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: rgb(244, 244, 244);
   overflow-x: hidden;
-  max-width: 1400px;
   min-height: 100vh;
   margin: 0 auto;
   font-family: "Rubik", sans-serif;
 }
+
 main {
   overflow-x: hidden;
-}
-.intro h1 {
-  font-weight: bolder;
-}
-.logo:after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-color: brown;
-  position: absolute;
-  top: 0px;
-}
-.logo:before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-color: rgb(255, 0, 0);
-  position: absolute;
-  bottom: 6px;
-}
-.menu:before {
-  content: "";
-  height: 8px;
-  width: 100%;
-  background-color: rgb(104, 104, 104);
-  position: absolute;
-  transition: all;
-  transition-duration: 600ms;
-}
-.menu:after {
-  content: "";
-  height: 8px;
-  width: 100%;
-  background-color: rgb(104, 104, 104);
-  position: absolute;
-  transition: all;
-  transition-duration: 600ms;
-}
-.skill-list li {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  align-items: center;
-  padding: 1rem;
-}
-.liveAnim {
-  animation: blink 700ms infinite alternate linear;
-}
-@keyframes blink {
-  100% {
-    background-color: rgb(18, 233, 18);
-  }
-}
-.repoAnim {
-  animation: bink 700ms infinite alternate linear;
-}
-@keyframes bink {
-  100% {
-    background-color: rgb(110, 110, 110);
-  }
-}
-.starting {
-  transition: all;
-  transition-duration: 1.2s;
-  transform: scale(var(--scale-till));
-}
-.swipe.swipe-right {
-  position: relative;
-  transform: translateX(100%);
-  opacity: 0;
-  transition: 1s all ease;
-}
-.swipe.swipe-left {
-  position: relative;
-  transform: translateX(-100%);
-  opacity: 0;
-  transition: 1s all ease;
-}
-.swipe.swipe-up {
-  position: relative;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: 1s all ease;
-}
-.swipe.swipe-left.active,
-.swipe.swipe-right.active {
-  transform: translateX(0);
-  opacity: 1;
-}
-.swipe.swipe-up.active {
-  transform: translateY(0);
-  opacity: 1;
 }
