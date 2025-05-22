@@ -155,7 +155,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.7 }}
             >
-              Crafting fast, elegant frontend interfaces that deliver real results. Let's build something incredible together.
+              Crafting fast, elegant frontend interfaces that deliver real results. Let&apos;s build something incredible together.
             </motion.p>
 
             {/* Buttons */}

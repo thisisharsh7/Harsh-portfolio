@@ -355,7 +355,7 @@ export default function FullPortfolioPage() {
                                 <span className="text-cyan-300">👋</span> Hey There!
                             </h3>
                             <p>
-                                I’m Harsh — a passionate Frontend Developer, Full-Stack Explorer, and Creative
+                                I&apos;m Harsh — a passionate Frontend Developer, Full-Stack Explorer, and Creative
                                 Technophile. I live for crafting beautiful, responsive web experiences and diving deep
                                 into the tech stack to solve real-world problems.
                             </p>
