@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaFolder, FaFileAlt, FaTimes, FaDownload } from 'react-icons/fa';
 import Link from 'next/link';
-import { SparklesCore } from '../components/ui/sparkles';
+import Head from 'next/head';
+import SparklesBackground from '../components/SparklesBackground';
 
-// 🔧 Improved section titles and descriptions
+// Centralized files data
 const files = [
   {
     name: 'About Me',
@@ -72,165 +73,198 @@ export default function Home() {
   const headingWords = 'Frontend Developer | Creative | Fast Learner | Focused on Results'.split(' ');
 
   return (
-    <main
-      className="relative flex flex-col items-center justify-center min-h-screen w-full bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900 text-white px-4 sm:px-6 md:px-8 lg:px-12"
-      role="main"
-      aria-label="Portfolio Homepage"
-    >
-      <div className="absolute inset-0 -z-2 select-none pointer-events-none">
-        <SparklesCore
-          background="transparent"
-          minSize={0.4}
-          maxSize={1.0}
-          particleDensity={80}
-          className="w-full h-full"
-          particleColor="#bae6fd"
+    <>
+      <Head>
+        <title>Harsh | Frontend Developer</title>
+        <meta name="description" content="Frontend developer with experience across 5+ startups and international clients. Passionate about building modern, performant web apps." />
+        <link rel="canonical" href="https://dev-harsh.vercel.app/" />
+        <meta property="og:title" content="Harsh | Frontend Developer" />
+        <meta property="og:description" content="Worked with international clients and reviewed codebases across startups." />
+        <meta property="og:image" content="/images/og-image.jpg" />
+        <meta property="og:image:alt" content="Harsh's portfolio preview" />
+        <meta property="og:url" content="https://dev-harsh.vercel.app/" />
+        <meta name="twitter:image" content="/images/og-image.jpg" />
+        <meta name="twitter:image:alt" content="Harsh's portfolio preview" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Person',
+              'name': 'Harsh',
+              'jobTitle': 'Frontend Developer',
+              'url': 'https://dev-harsh.vercel.app',
+              'sameAs': [
+                'https://github.com/thisisharsh7',
+                'https://linkedin.com/in/thisisharsh7',
+                'https://twitter.com/thisisharsh7',
+              ],
+              'image': 'https://dev-harsh.vercel.app/images/Harsh_Profile_Pic.jpg',
+            }),
+          }}
         />
-        <div className="absolute inset-0 bg-black/45 backdrop-blur-[2px]" />
-      </div>
-
-      <AnimatePresence mode="wait" initial={false}>
-        {!loaded ? (
-          <motion.section
-            key="loader"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0, y: 20 }}
-            transition={{ duration: 0.5 }}
-            className="flex flex-col items-center relative justify-center space-y-6"
-          >
-            <motion.div
-              className="relative w-28 h-28 border-6 border-blue-400 border-t-transparent rounded-full animate-spin-slow"
-              style={{ animationDuration: '1.5s' }}
+      </Head>
+      <main
+        className="relative flex flex-col items-center justify-center min-h-screen w-full bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900 text-white px-4 sm:px-6 md:px-8 lg:px-12"
+        role="main"
+        aria-label="Portfolio Homepage"
+      >
+        <Suspense
+          fallback={
+            <div
+              className="absolute inset-0 -z-2 select-none pointer-events-none bg-black/45 backdrop-blur-[2px]"
+              aria-hidden="true"
             />
-            <motion.p
-              className="text-xl sm:text-2xl text-center font-medium tracking-wide text-blue-200"
+          }
+        >
+          <SparklesBackground />
+        </Suspense>
+        <AnimatePresence mode="wait" initial={false}>
+          {!loaded ? (
+            <motion.section
+              key="loader"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.6 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col items-center relative justify-center space-y-6"
+              aria-live="polite"
             >
-              Building your experience... {progress}%
-            </motion.p>
-            <motion.button
-              onClick={() => setSkipLoading(true)}
-              className="flex items-center gap-2 rounded-full bg-blue-500 px-4 py-2 text-sm font-medium text-white hover:bg-blue-600 focus:ring-2 focus:ring-blue-300"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              <FaTimes />
-              Skip
-            </motion.button>
-          </motion.section>
-        ) : (
-          <motion.section
-            key="content"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="flex flex-col relative items-center max-w-[90rem] w-full py-8 sm:py-10 md:py-14"
-          >
-            <motion.h1
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-center leading-tight tracking-tight max-w-4xl"
-              initial="hidden"
-              animate="visible"
-              transition={{ staggerChildren: 0.05 }}
-            >
-              {headingWords.map((word, idx) => (
-                <motion.span
-                  key={idx}
-                  className="inline-block mr-1 text-white drop-shadow-sm"
-                  initial={{ opacity: 0, y: -30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: idx * 0.08 }}
-                >
-                  {word}
-                </motion.span>
-              ))}
-            </motion.h1>
-
-            <motion.p
-              className="mt-4 max-w-xl text-center text-sm sm:text-base text-blue-100/90"
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.7 }}
-            >
-              Crafting fast, elegant frontend interfaces that deliver real results. Let&apos;s build something incredible together.
-            </motion.p>
-
-            {/* Buttons */}
-            <motion.div
-              className="mt-6 flex items-center gap-3"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.8 }}
-            >
-              <a
-                href="/doc/Harsh_Resume.pdf"
-                download
-                className="flex items-center gap-2 rounded-full bg-blue-600 px-4 py-2 text-sm text-white hover:bg-blue-700"
+              <motion.div
+                className="relative w-28 h-28 border-6 border-blue-400 border-t-transparent rounded-full animate-spin-slow"
+                style={{ animationDuration: '1.5s' }}
+                aria-hidden="true"
+              />
+              <motion.p
+                className="text-xl sm:text-2xl text-center font-medium tracking-wide text-blue-200"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.6 }}
               >
-                <FaDownload />
-                Resume
-              </a>
-              <a
-                href="mailto:9u.harsh@gmail.com"
-                className="flex items-center gap-2 rounded-full bg-green-600 px-4 py-2 text-sm text-white hover:bg-green-700"
+                Building your experience... {progress}%
+              </motion.p>
+              <motion.button
+                onClick={() => setSkipLoading(true)}
+                className="flex items-center gap-2 rounded-full bg-blue-500 px-4 py-2 text-sm font-medium text-white hover:bg-blue-600 focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-gray-900"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                aria-label="Skip loading animation"
               >
-                <FaFileAlt />
-                Contact
-              </a>
-            </motion.div>
-
-            {/* Cards */}
-            <motion.div
-              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-10 w-full max-w-[80rem] px-4"
+                <FaTimes />
+                Skip
+              </motion.button>
+            </motion.section>
+          ) : (
+            <motion.section
+              key="content"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.9 }}
+              transition={{ duration: 0.6 }}
+              className="flex flex-col relative items-center max-w-[90rem] w-full py-8 sm:py-10 md:py-14"
             >
-              {files.map(({ name, path, icon, color, description, highlight }, idx) => (
-                <Link key={idx} href={path} passHref>
-                  <motion.a
-                    onClick={() => setActiveCard(idx)}
-                    className={`group relative flex flex-col items-center justify-center rounded-xl bg-gray-800 bg-opacity-90 border ${highlight ? 'border-blue-400' : 'border-gray-600'
-                      } shadow-md hover:bg-blue-700/30 transition-all duration-200 p-5`}
-                    whileHover={{ scale: 1.05, y: -2 }}
-                    whileTap={{ scale: 0.98 }}
+              <motion.h1
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-center leading-tight tracking-tight max-w-4xl"
+                initial="hidden"
+                animate="visible"
+                transition={{ staggerChildren: 0.05 }}
+              >
+                {headingWords.map((word, idx) => (
+                  <motion.span
+                    key={idx}
+                    className="inline-block mr-1 text-white drop-shadow-sm"
+                    initial={{ opacity: 0, y: -30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: idx * 0.08 }}
                   >
-                    <div
-                      className={`text-3xl mb-3 p-3 rounded-full bg-gradient-to-br from-blue-700 via-blue-800 to-cyan-700 text-white shadow ${color}`}
-                    >
-                      {icon}
-                    </div>
-                    <span className="text-base font-semibold text-white text-center">{name}</span>
-                    <span
-                      className="mt-2 text-xs text-center text-gray-300"
-                      id={`desc-${idx}`}
-                    >
-                      {description}
-                    </span>
-                  </motion.a>
-                </Link>
-              ))}
-            </motion.div>
-          </motion.section>
-        )}
-      </AnimatePresence>
+                    {word}
+                  </motion.span>
+                ))}
+              </motion.h1>
 
-      <style jsx global>{`
-        @keyframes spin-slow {
-          from {
-            transform: rotate(0deg);
+              <motion.p
+                className="mt-4 max-w-xl text-center text-sm sm:text-base text-blue-100/90"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.7 }}
+              >
+                Crafting fast, elegant frontend interfaces that deliver real results. Let&apos;s build something incredible together.
+              </motion.p>
+
+              <motion.div
+                className="mt-6 flex items-center gap-3"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.8 }}
+              >
+                <a
+                  href="/doc/Harsh_Resume.pdf"
+                  download
+                  className="flex items-center gap-2 rounded-full bg-blue-600 px-4 py-2 text-sm text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900"
+                  aria-label="Download Harsh's resume"
+                >
+                  <FaDownload />
+                  Resume
+                </a>
+                <a
+                  href="mailto:9u.harsh@gmail.com"
+                  className="flex items-center gap-2 rounded-full bg-green-600 px-4 py-2 text-sm text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 focus:ring-offset-gray-900"
+                  aria-label="Contact Harsh via email"
+                >
+                  <FaFileAlt />
+                  Contact
+                </a>
+              </motion.div>
+
+              <motion.div
+                className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-10 w-full max-w-[80rem] px-4"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.9 }}
+              >
+                {files.map(({ name, path, icon, color, description, highlight }, idx) => (
+                  <Link key={idx} href={path} passHref>
+                    <motion.a
+                      onClick={() => setActiveCard(idx)}
+                      className={`group relative flex flex-col items-center justify-center rounded-xl bg-gray-800 bg-opacity-90 border ${highlight ? 'border-blue-400' : 'border-gray-600'} shadow-md hover:bg-blue-700/30 transition-all duration-200 p-5 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900`}
+                      whileHover={{ scale: 1.05, y: -2 }}
+                      whileTap={{ scale: 0.98 }}
+                      aria-label={`Navigate to ${name} page`}
+                    >
+                      <div
+                        className={`text-3xl mb-3 p-3 rounded-full bg-gradient-to-br from-blue-700 via-blue-800 to-cyan-700 text-white shadow ${color}`}
+                      >
+                        {icon}
+                      </div>
+                      <span className="text-base font-semibold text-white text-center">{name}</span>
+                      <span
+                        className="mt-2 text-xs text-center text-gray-300"
+                        id={`desc-${idx}`}
+                      >
+                        {description}
+                      </span>
+                    </motion.a>
+                  </Link>
+                ))}
+              </motion.div>
+            </motion.section>
+          )}
+        </AnimatePresence>
+
+        <style jsx global>{`
+          @keyframes spin-slow {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
           }
-          to {
-            transform: rotate(360deg);
+          .animate-spin-slow {
+            animation: spin-slow 1.4s linear infinite;
           }
-        }
-        .animate-spin-slow {
-          animation: spin-slow 1.4s linear infinite;
-        }
-      `}</style>
-    </main>
+        `}</style>
+      </main>
+    </>
   );
 }

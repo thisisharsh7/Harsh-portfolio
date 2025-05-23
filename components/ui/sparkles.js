@@ -170,7 +170,7 @@ export const SparklesCore = ({
   return (
     <canvas
       ref={canvasRef}
-      className={`absolute top - 0 left - 0 ${ className } `}
+      className={`absolute top - 0 left - 0 ${className} `}
       style={{ background }}
       aria-hidden="true"
     />
