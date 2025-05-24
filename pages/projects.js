@@ -6,6 +6,7 @@ import SparklesBackground from '../components/SparklesBackground';
 import HomeButton from '../components/HomeButton';
 import { Suspense } from 'react';
 import { sampleProjects } from '../constants/data';
+import Image from 'next/image';
 
 const motionVariants = {
     section: {
@@ -107,10 +108,13 @@ export default function ProjectsPage() {
                                 {/* Screenshot Section */}
                                 {project.screenshot && (
                                     <div className="relative w-full max-h-56 sm:max-h-64 overflow-hidden rounded-t-2xl flex items-center justify-center p-4">
-                                        <img
+                                        <Image
                                             src={project.screenshot}
                                             alt={`${project.title} preview`}
-                                            className="max-h-full max-w-full object-contain transition-transform duration-500 ease-out group-hover:scale-105 group-hover:rotate-1"
+                                            width={1280} // intrinsic width of the image
+                                            height={720} // intrinsic height to preserve aspect ratio
+                                            className="object-contain transition-transform duration-500 ease-out group-hover:scale-105 group-hover:rotate-1 w-full h-auto"
+                                            priority={false}
                                         />
                                         {/* Overlay Gradient on hover */}
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-40 transition-opacity duration-500 pointer-events-none rounded-t-2xl" />
