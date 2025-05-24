@@ -46,27 +46,19 @@ export default function ExperiencePage() {
                     }}
                 />
             </Head>
-            <main
-                className="relative min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900 text-white lg:pt-12 sm:pt-8 pt-6 px-4 md:px-6 lg:px-8"
+            <motion.section
+                className="flex flex-col relative items-center max-w-[90rem] w-full sm:pt-12 pt-8"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
                 role="main"
                 aria-label="Portfolio Experience page"
             >
-                <Suspense
-                    fallback={
-                        <div
-                            className="absolute inset-0 -z-2 select-none pointer-events-none bg-black/45 backdrop-blur-[2px]"
-                            aria-hidden="true"
-                        />
-                    }
-                >
-                    <SparklesBackground />
-                </Suspense>
-
                 <h1 className="text-3xl sm:text-4xl font-bold text-center mb-10 text-white relative">
                     Experience Timeline
                 </h1>
 
-                <div className="relative max-w-6xl mx-auto pb-24">
+                <div className="relative max-w-6xl w-full mx-auto pb-24">
                     <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-cyan-600" aria-hidden="true"></div>
                     <div className="flex flex-col gap-16 pt-12">
                         {experiences.map((exp, i) => {
@@ -101,9 +93,8 @@ export default function ExperiencePage() {
                         })}
                     </div>
                 </div>
-
-                <HomeButton />
-            </main>
+            </motion.section>
+            <HomeButton />
         </>
     );
 }

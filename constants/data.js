@@ -147,3 +147,16 @@ export const sampleProjects = [
     codeLink: 'https://github.com/thisisharsh7/crater-assignment',
   }
 ];
+
+// constants/preloadImages.js
+export const preloadImageUrls = [
+  '/images/projects/my-shop.png',
+  '/images/projects/30-days.png',
+  '/images/projects/clone-trio.png',
+  '/images/projects/hacker-news.png',
+  '/images/projects/dash-board.png',
+  '/images/projects/story-app.png',
+  '/images/projects/chat-bot.png',
+  '/images/projects/crater-dash.png',
+  '/images/Harsh_Profile_Pic.jpg',
+];
