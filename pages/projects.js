@@ -83,71 +83,90 @@ export default function ProjectsPage() {
                         Projects - Portfolio.md
                     </h1>
 
-                    <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
                         {sampleProjects.slice(0, visibleCount).map((project, idx) => (
                             <motion.div
                                 key={idx}
                                 initial={isReducedMotion ? {} : motionVariants.card.initial}
                                 animate={isReducedMotion ? {} : motionVariants.card.animate}
                                 transition={isReducedMotion ? {} : { ...motionVariants.card.transition, delay: idx * 0.1 }}
-                                whileHover={isReducedMotion ? {} : { scale: 1.03, boxShadow: '0 8px 20px rgba(96, 165, 250, 0.5)' }}
-                                className="bg-black/30 backdrop-blur-md p-8 rounded-2xl shadow-xl flex flex-col"
+                                whileHover={
+                                    isReducedMotion
+                                        ? {}
+                                        : {
+                                            scale: 1.05,
+                                            y: -5,
+                                            boxShadow: '0 12px 24px rgba(96, 165, 250, 0.6)',
+                                            borderColor: 'rgba(96, 165, 250, 0.7)',
+                                        }
+                                }
+                                className="relative group bg-black/30 backdrop-blur-md p-0 rounded-2xl shadow-lg border border-transparent overflow-hidden cursor-pointer transition-all duration-300"
                                 role="region"
                                 aria-labelledby={`project-title-${idx}`}
                             >
-                                <h2
-                                    id={`project-title-${idx}`}
-                                    className="text-lg sm:text-xl font-semibold text-white mb-4"
-                                >
-                                    {project.title}
-                                </h2>
-                                <p className="text-sm sm:text-base text-gray-300 mb-6 flex-grow">
-                                    {project.description}
-                                </p>
-                                <div className="flex flex-wrap gap-3 mb-6">
-                                    {project.tech.map((tech, i) => (
-                                        <motion.span
-                                            key={i}
-                                            initial={isReducedMotion ? {} : { opacity: 0, y: 10 }}
-                                            animate={isReducedMotion ? {} : { opacity: 1, y: 0 }}
-                                            transition={isReducedMotion ? {} : { duration: 0.4, delay: i * 0.05 }}
-                                            className="px-3 py-1 text-xs sm:text-sm bg-cyan-700 text-white rounded-full"
-                                        >
-                                            {tech}
-                                        </motion.span>
-                                    ))}
-                                </div>
-                                <div className="flex gap-6">
+                                {/* Screenshot Section */}
+                                {project.screenshot && (
+                                    <div className="relative w-full max-h-56 sm:max-h-64 overflow-hidden rounded-t-2xl flex items-center justify-center p-4">
+                                        <img
+                                            src={project.screenshot}
+                                            alt={`${project.title} preview`}
+                                            className="max-h-full max-w-full object-contain transition-transform duration-500 ease-out group-hover:scale-105 group-hover:rotate-1"
+                                        />
+                                        {/* Overlay Gradient on hover */}
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-40 transition-opacity duration-500 pointer-events-none rounded-t-2xl" />
+                                    </div>
+                                )}
+
+                                {/* Buttons Section */}
+                                <div className="flex justify-center gap-4 mt-4 px-6">
                                     {project.liveLink !== '#' && (
-                                        <motion.a
+                                        <a
                                             href={project.liveLink}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            whileHover={isReducedMotion ? {} : { scale: 1.05 }}
-                                            whileTap={isReducedMotion ? {} : { scale: 0.95 }}
-                                            className="flex items-center gap-2 text-blue-400 hover:text-blue-300 text-sm sm:text-base font-medium focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900"
+                                            className="flex items-center gap-2 bg-blue-400 hover:bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-semibold shadow-md transition"
                                             aria-label={`View live demo of ${project.title}`}
                                         >
-                                            <FaExternalLinkAlt />
+                                            <FaExternalLinkAlt aria-hidden="true" />
                                             Live
-                                        </motion.a>
+                                        </a>
                                     )}
-                                    <motion.a
+                                    <a
                                         href={project.codeLink}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        whileHover={isReducedMotion ? {} : { scale: 1.05 }}
-                                        whileTap={isReducedMotion ? {} : { scale: 0.95 }}
-                                        className="flex items-center gap-2 text-green-400 hover:text-green-300 text-sm sm:text-base font-medium focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 focus:ring-offset-gray-900"
+                                        className="flex items-center gap-2 bg-green-400 hover:bg-green-500 text-white px-4 py-2 rounded-lg text-sm font-semibold shadow-md transition"
                                         aria-label={`View source code of ${project.title}`}
                                     >
-                                        <FaGithub />
+                                        <FaGithub aria-hidden="true" />
                                         Code
-                                    </motion.a>
+                                    </a>
+                                </div>
+
+                                {/* Text Content */}
+                                <div className="p-6 flex flex-col flex-grow">
+                                    <h2 id={`project-title-${idx}`} className="text-lg sm:text-xl font-semibold text-white mb-3">
+                                        {project.title}
+                                    </h2>
+                                    <p className="text-sm sm:text-base text-gray-300 mb-4 flex-grow">
+                                        {project.description}
+                                    </p>
+                                    <div className="flex flex-wrap gap-2">
+                                        {project.tech.map((tech, i) => (
+                                            <span
+                                                key={i}
+                                                className="px-3 py-1 text-xs sm:text-sm bg-cyan-700 text-white rounded-full"
+                                            >
+                                                {tech}
+                                            </span>
+                                        ))}
+                                    </div>
                                 </div>
                             </motion.div>
+
                         ))}
                     </div>
+
 
                     {visibleCount < sampleProjects.length && (
                         <motion.div
