@@ -358,20 +358,18 @@ export default function FullPortfolioPage() {
                       borderColor: 'rgba(96, 165, 250, 0.7)',
                     }
                 }
-                className="relative group bg-black/30 backdrop-blur-md p-0 rounded-2xl shadow-lg border border-transparent overflow-hidden cursor-pointer transition-all duration-300"
+                className="relative group bg-black/30 backdrop-blur-md p-0 rounded-2xl shadow-lg border-[1px] border-cyan-900 overflow-hidden cursor-pointer transition-all duration-300"
                 role="region"
                 aria-labelledby={`project-title-${idx}`}
               >
                 {/* Screenshot Section */}
                 {project.screenshot && (
-                  <div className="relative w-full max-h-56 sm:max-h-64 overflow-hidden rounded-t-2xl flex items-center justify-center p-4">
-                    <Image
+                  <div className="relative w-full max-h-56 sm:max-h-64 overflow-hidden rounded-t-2xl flex items-center justify-center">
+                    <img
                       src={project.screenshot}
                       alt={`${project.title} preview`}
-                      width={1280} // intrinsic width of the image
-                      height={720} // intrinsic height to preserve aspect ratio
-                      className="object-contain transition-transform duration-500 ease-out group-hover:scale-105 group-hover:rotate-1 w-full h-auto"
-                      priority={false}
+                      loading='lazy'
+                      className="max-h-full max-w-full object-contain transition-transform duration-500 ease-out group-hover:scale-105 group-hover:rotate-1"
                     />
                     {/* Overlay Gradient on hover */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-40 transition-opacity duration-500 pointer-events-none rounded-t-2xl" />
