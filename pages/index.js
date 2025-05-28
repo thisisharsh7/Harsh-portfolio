@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { FaFolder, FaFileAlt, FaDownload } from 'react-icons/fa';
 import Link from 'next/link';
 import Head from 'next/head';
-import SparklesBackground from '../components/SparklesBackground';
 
 const files = [
   {
@@ -83,7 +82,7 @@ export default function Home() {
       </Head>
 
       <motion.section
-        className="flex flex-col relative items-center min-h-screen justify-center max-w-[90rem] w-full sm:pt-12 pt-8 pb-24"
+        className="flex flex-col relative items-center min-h-screen justify-center  w-full sm:pt-12 pt-8 pb-24"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}

@@ -2,9 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
-import SparklesBackground from '../components/SparklesBackground';
 import HomeButton from '../components/HomeButton';
-import { Suspense } from 'react';
 import { sampleProjects } from '../constants/data';
 
 const motionVariants = {
@@ -58,7 +56,7 @@ export default function ProjectsPage() {
                 initial={isReducedMotion ? {} : motionVariants.section.initial}
                 animate={isReducedMotion ? {} : motionVariants.section.animate}
                 transition={isReducedMotion ? {} : motionVariants.section.transition}
-                className="max-w-[90rem] w-full relative sm:pt-12 pt-8 pb-24"
+                className=" w-full relative sm:pt-12 pt-8 pb-24"
                 role="main"
                 aria-label="Portfolio Projects page"
             >

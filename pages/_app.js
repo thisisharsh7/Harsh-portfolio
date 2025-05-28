@@ -107,7 +107,9 @@ export default function MyApp({ Component, pageProps }) {
         >
           <SparklesBackground />
         </Suspense>
-        <Component {...pageProps} />
+        <div className="mx-auto  max-w-[90rem]">
+          <Component {...pageProps} />
+        </div>
       </main>
     </>
   );

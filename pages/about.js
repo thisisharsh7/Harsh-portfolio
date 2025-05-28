@@ -2,9 +2,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import SocialLinks from '../components/SocialLinks';
-import SparklesBackground from '../components/SparklesBackground';
 import HomeButton from '../components/HomeButton';
-import { Suspense } from 'react';
 
 const motionVariants = {
     section: {
@@ -65,7 +63,7 @@ export default function AboutPage() {
                 initial={isReducedMotion ? {} : motionVariants.section.initial}
                 animate={isReducedMotion ? {} : motionVariants.section.animate}
                 transition={isReducedMotion ? {} : motionVariants.section.transition}
-                className="max-w-[90rem] w-full sm:pt-12 pt-8 pb-24 flex flex-col md:flex-row gap-6 sm:gap-8 md:gap-10"
+                className=" w-full sm:pt-12 pt-8 pb-24 flex flex-col md:flex-row gap-6 sm:gap-8 md:gap-10"
                 role="main"
                 aria-label="Portfolio About page"
             >

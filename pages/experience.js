@@ -1,9 +1,7 @@
 import { motion } from 'framer-motion';
 import Head from 'next/head';
-import SparklesBackground from '../components/SparklesBackground';
 import HomeButton from '../components/HomeButton';
 import { experiences } from '../constants/data';
-import { Suspense } from 'react';
 
 export default function ExperiencePage() {
     return (
@@ -47,7 +45,7 @@ export default function ExperiencePage() {
                 />
             </Head>
             <motion.section
-                className="flex flex-col relative items-center max-w-[90rem] w-full sm:pt-12 pt-8"
+                className="flex flex-col relative items-center w-full sm:pt-12 pt-8"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}

@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { FaHome } from 'react-icons/fa';
-import SparklesBackground from '../components/SparklesBackground';
 
 export default function Custom404() {
     return (
@@ -11,7 +10,7 @@ export default function Custom404() {
                 <meta name="description" content="The page you are looking for does not exist." />
             </Head>
             <section
-                className="max-w-[90rem] w-full relative sm:pt-12 pt-8 min-h-screen flex flex-col items-center justify-center  pb-24"
+                className=" w-full relative sm:pt-12 pt-8 min-h-screen flex flex-col items-center justify-center  pb-24"
                 role="main"
                 aria-label="Portfolio Error page"
             >

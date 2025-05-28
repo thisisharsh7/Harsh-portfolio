@@ -1,10 +1,8 @@
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import SparklesBackground from '../components/SparklesBackground';
 import HomeButton from '../components/HomeButton';
 import { achievements } from '../constants/data';
-import { Suspense } from 'react';
 
 const motionVariants = {
     section: {
@@ -57,7 +55,7 @@ export default function AchievementsPage() {
                 initial={isReducedMotion ? {} : motionVariants.section.initial}
                 animate={isReducedMotion ? {} : motionVariants.section.animate}
                 transition={isReducedMotion ? {} : motionVariants.section.transition}
-                className="max-w-[90rem] w-full relative sm:pt-12 pt-8 pb-24"
+                className="w-full relative sm:pt-12 pt-8 pb-24"
                 role="main"
                 aria-label="Portfolio Achievements page"
             >

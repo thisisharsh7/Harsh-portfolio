@@ -1,10 +1,9 @@
-import { useState, Suspense } from 'react';
+import { useState} from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import SocialLinks from '../components/SocialLinks';
-import SparklesBackground from '../components/SparklesBackground';
 import HomeButton from '../components/HomeButton';
 import { sampleProjects, experiences, achievements } from '../constants/data';
 
@@ -84,7 +83,7 @@ export default function FullPortfolioPage() {
         transition={isReducedMotion ? {} : { duration: 0.5 }}
         className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-lg shadow-md"
       >
-        <div className="max-w-[90rem] mx-auto px-4 sm:px-6 md:px-8 py-4 flex justify-center gap-4 sm:gap-6">
+        <div className=" mx-auto px-4 sm:px-6 md:px-8 py-4 flex justify-center gap-4 sm:gap-6">
           {navItems.map((item) => (
             <a
               key={item.id}
@@ -103,7 +102,7 @@ export default function FullPortfolioPage() {
         initial={isReducedMotion ? {} : motionVariants.section.initial}
         animate={isReducedMotion ? {} : motionVariants.section.animate}
         transition={isReducedMotion ? {} : motionVariants.section.transition}
-        className="max-w-[90rem] w-full pt-20 pb-24 mx-auto flex flex-col md:flex-row gap-6 sm:gap-8 md:gap-10"
+        className=" w-full pt-20 pb-24 mx-auto flex flex-col md:flex-row gap-6 sm:gap-8 md:gap-10"
       >
         <motion.div
           initial={isReducedMotion ? {} : motionVariants.profile.initial}
@@ -265,7 +264,7 @@ export default function FullPortfolioPage() {
         initial={isReducedMotion ? {} : motionVariants.section.initial}
         animate={isReducedMotion ? {} : motionVariants.section.animate}
         transition={isReducedMotion ? {} : motionVariants.section.transition}
-        className="max-w-[90rem] w-full pt-20 mx-auto"
+        className=" w-full pt-20 mx-auto"
       >
         <h2
           className="text-3xl sm:text-4xl font-bold text-center mb-10 text-white relative"
@@ -316,7 +315,7 @@ export default function FullPortfolioPage() {
         initial={isReducedMotion ? {} : motionVariants.section.initial}
         animate={isReducedMotion ? {} : motionVariants.section.animate}
         transition={isReducedMotion ? {} : motionVariants.section.transition}
-        className="max-w-[90rem] w-full pt-20 mx-auto"
+        className=" w-full pt-20 mx-auto"
       >
         <h2
           className="text-3xl sm:text-4xl font-bold text-blue-100 mb-12 text-center"
@@ -434,7 +433,7 @@ export default function FullPortfolioPage() {
         initial={isReducedMotion ? {} : motionVariants.section.initial}
         animate={isReducedMotion ? {} : motionVariants.section.animate}
         transition={isReducedMotion ? {} : motionVariants.section.transition}
-        className="max-w-[90rem] w-full pt-20 pb-24 mx-auto"
+        className=" w-full pt-20 pb-24 mx-auto"
       >
         <h2
           className="text-3xl sm:text-4xl font-bold text-blue-100 mb-10 text-center"
