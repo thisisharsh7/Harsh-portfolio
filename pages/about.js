@@ -2,7 +2,9 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import SocialLinks from '../components/SocialLinks';
+import SparklesBackground from '../components/SparklesBackground';
 import HomeButton from '../components/HomeButton';
+import { Suspense } from 'react';
 
 const motionVariants = {
     section: {

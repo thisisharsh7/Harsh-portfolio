@@ -52,11 +52,15 @@ export default function ExperiencePage() {
                 role="main"
                 aria-label="Portfolio Experience page"
             >
-                <h1 className="text-3xl sm:text-4xl font-bold text-center mb-10 text-white relative">
-                    Experience Timeline
-                </h1>
-
-                <div className="relative max-w-6xl w-full mx-auto pb-24">
+                <div className="text-center mb-16">
+                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-white relative">
+                        ⏳ Experience Timeline
+                    </h1>
+                    <p className="text-slate-400 mt-4 text-md sm:text-xl max-w-2xl mx-auto">
+                        A detailed timeline of my professional journey, highlighting key roles and contributions in frontend and full-stack development.
+                    </p>
+                </div>
+                <div className="relative w-full pb-24">
                     <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-cyan-600" aria-hidden="true"></div>
                     <div className="flex flex-col gap-16 pt-12">
                         {experiences.map((exp, i) => {
@@ -73,14 +77,54 @@ export default function ExperiencePage() {
                                     aria-labelledby={`experience-title-${i}`}
                                 >
                                     <div className={`w-full md:w-1/2 px-2 md:px-4 ${isRight ? 'md:pr-10' : 'md:pl-10'}`}>
-                                        <div className="bg-black/30 backdrop-blur-md text-black p-6 rounded-2xl shadow-lg transition-all hover:scale-[1.02]">
-                                            <h2 id={`experience-title-${i}`} className="text-xl text-white font-semibold">
+                                        <motion.div
+                                            className="bg-gradient-to-br from-white/10 to-cyan-500/10 backdrop-blur-lg border border-white/20 p-6 rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+                                            whileHover={{ scale: 1.02 }}
+                                        >
+                                            <motion.h2
+                                                id={`experience-title-${i}`}
+                                                className="text-xl text-white font-semibold mb-2"
+                                                initial={{ x: -10, opacity: 0 }}
+                                                whileInView={{ x: 0, opacity: 1 }}
+                                                transition={{ duration: 0.3 }}
+                                            >
                                                 {exp.role}
-                                            </h2>
-                                            <p className="text-md font-bold text-cyan-300">{exp.company}</p>
-                                            <p className="text-sm text-white">{exp.period} · {exp.location}</p>
-                                            <p className="mt-2 text-sm text-blue-100">{exp.description}</p>
-                                        </div>
+                                            </motion.h2>
+                                            <motion.p
+                                                className="text-md font-bold text-cyan-300 mb-1"
+                                                initial={{ x: -10, opacity: 0 }}
+                                                whileInView={{ x: 0, opacity: 1 }}
+                                                transition={{ duration: 0.3, delay: 0.1 }}
+                                            >
+                                                {exp.company}
+                                            </motion.p>
+                                            <motion.p
+                                                className="text-sm text-gray-300 mb-3"
+                                                initial={{ x: -10, opacity: 0 }}
+                                                whileInView={{ x: 0, opacity: 1 }}
+                                                transition={{ duration: 0.3, delay: 0.2 }}
+                                            >
+                                                {exp.period} · {exp.location}
+                                            </motion.p>
+                                            <motion.p
+                                                className="text-sm text-blue-100 leading-relaxed"
+                                                initial={{ x: -10, opacity: 0 }}
+                                                whileInView={{ x: 0, opacity: 1 }}
+                                                transition={{ duration: 0.3, delay: 0.3 }}
+                                            >
+                                                {exp.description}
+                                            </motion.p>
+                                            <div className="mt-4 flex flex-wrap gap-2">
+                                                {exp.technologies?.map((tech, techIndex) => (
+                                                    <span
+                                                        key={techIndex}
+                                                        className="inline-block bg-cyan-600/20 text-cyan-200 text-xs font-semibold px-2.5 py-1 rounded-full"
+                                                    >
+                                                        {tech}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                        </motion.div>
                                     </div>
                                     <div
                                         className="absolute md:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-cyan-600 w-5 h-5 rounded-full border-4 border-white z-10"
