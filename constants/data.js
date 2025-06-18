@@ -82,14 +82,14 @@ export const experiences = [
 ];
 
 export const sampleProjects = [
-  {
-    title: 'My Shop',
-    description: 'A responsive e-commerce dashboard with custom CSS animations and integrated query handling using EmailJS.',
-    tech: ['React', 'CSS', 'EmailJS'],
-    screenshot: '/images/projects/my-shop.png',
-    liveLink: 'https://my-shop123.netlify.app/',
-    codeLink: 'https://github.com/thisisharsh7/my-shop',
-  },
+  // {
+  //   title: 'My Shop',
+  //   description: 'A responsive e-commerce dashboard with custom CSS animations and integrated query handling using EmailJS.',
+  //   tech: ['React', 'CSS', 'EmailJS'],
+  //   screenshot: '/images/projects/my-shop.png',
+  //   liveLink: 'https://my-shop123.netlify.app/',
+  //   codeLink: 'https://github.com/thisisharsh7/my-shop',
+  // },
   {
     title: '30 Days of Code',
     description: 'A collection of beginner-friendly web projects built over 30 days without tutorials, demonstrating self-taught frontend skills.',
@@ -150,7 +150,7 @@ export const sampleProjects = [
 
 // constants/preloadImages.js
 export const preloadImageUrls = [
-  '/images/projects/my-shop.png',
+  // '/images/projects/my-shop.png',
   '/images/projects/30-days.png',
   '/images/projects/clone-trio.png',
   '/images/projects/hacker-news.png',
