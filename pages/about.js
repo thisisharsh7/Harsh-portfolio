@@ -91,8 +91,8 @@ export default function AboutPage() {
                             />
 
                         </motion.div>
-                        <h1 className="text-2xl sm:text-3xl font-bold text-white mt-4 text-center">Harsh — Frontend Developer</h1>
-                        <p className="text-sm sm:text-base text-gray-300 mt-2 text-center">Crafting pixels into solutions 🚀</p>
+                        <h1 className="text-2xl sm:text-2xl 2xl:text-3xl font-bold text-white mt-4 text-center">Harsh — Software Engineer</h1>
+                        <p className="text-sm sm:text-sm 2xl:text-base text-gray-300 mt-2 text-center">Turning user needs into clean, usable software 🚀</p>
                         <SocialLinks />
                     </div>
                 </motion.div>
@@ -121,11 +121,11 @@ export default function AboutPage() {
                                 <span className="text-cyan-300">👋</span> Hey There!
                             </h3>
                             <p>
-                                I&apos;m Harsh — a passionate Frontend Developer, Full-Stack Explorer, and Creative
-                                Technophile. I live for crafting beautiful, responsive web experiences and diving deep
-                                into the tech stack to solve real-world problems.
+                                I&apos;m Harsh — a UX-focused Software Engineer who enjoys building fast, intuitive, and user-friendly applications.
+                                I combine clean frontend design with full-stack capabilities to deliver software that feels as good as it works.
                             </p>
                         </motion.div>
+
                         <motion.div
                             initial={isReducedMotion ? {} : { opacity: 0, y: 10 }}
                             animate={isReducedMotion ? {} : { opacity: 1, y: 0 }}
@@ -135,14 +135,13 @@ export default function AboutPage() {
                                 <span className="text-cyan-300">🔭</span> Currently Working On
                             </h3>
                             <ul className="list-disc pl-5 space-y-2">
-                                <li>Sharpening my Data Structures & Algorithms (DSA) skills.</li>
-                                <li>
-                                    Expanding expertise in MongoDB, React, Node.js, Firebase, Docker, and Express.
-                                </li>
-                                <li>Exploring Web3 technologies and ethical hacking.</li>
-                                <li>Building and optimizing full-stack apps.</li>
+                                <li>Improving my Data Structures & Algorithms using C++ and Python.</li>
+                                <li>Deepening frontend skills with React, Next.js, and Tailwind CSS.</li>
+                                <li>Building full-stack apps with Firebase, MongoDB, and Express.</li>
+                                <li>Exploring the fundamentals of AI and user-centric software design.</li>
                             </ul>
                         </motion.div>
+
                         <motion.div
                             initial={isReducedMotion ? {} : { opacity: 0, y: 10 }}
                             animate={isReducedMotion ? {} : { opacity: 1, y: 0 }}
@@ -152,22 +151,14 @@ export default function AboutPage() {
                                 <span className="text-cyan-300">⚡</span> What I Do
                             </h3>
                             <ul className="list-disc pl-5 space-y-2">
-                                <li>
-                                    Build responsive websites with React, Next.js, and TailwindCSS.
-                                </li>
-                                <li>
-                                    Develop full-stack apps with MongoDB, Express, Node.js, and Firebase
-                                    authentication.
-                                </li>
-                                <li>Integrate Stripe & Verotel for secure payment processing.</li>
-                                <li>
-                                    Solve complex problems and refactor legacy code (reviewed 50+ directories).
-                                </li>
-                                <li>
-                                    Create AI-enhanced videos and manage content for Instagram and YouTube.
-                                </li>
+                                <li>Design and build responsive user interfaces with React and Next.js.</li>
+                                <li>Develop scalable full-stack applications with MERN & Firebase.</li>
+                                <li>Focus on performance, interaction feel, and layout consistency.</li>
+                                <li>Work with motion design and UX clarity to improve user experience.</li>
+                                <li>Experiment with AI tools and automation in creative workflows.</li>
                             </ul>
                         </motion.div>
+
                         <motion.div
                             initial={isReducedMotion ? {} : { opacity: 0, y: 10 }}
                             animate={isReducedMotion ? {} : { opacity: 1, y: 0 }}
@@ -217,6 +208,7 @@ export default function AboutPage() {
                             </div>
                         </motion.div>
                     </div>
+
                 </motion.div>
             </motion.section>
 

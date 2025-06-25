@@ -46,15 +46,15 @@ const files = [
 
 export default function Home() {
   const [activeCard, setActiveCard] = useState(null);
-  const headingWords = 'Frontend Developer | Creative | Fast Learner | Focused on Results'.split(' ');
+  const headingWords = 'Software Engineer | UX-Focused'.split(' ');
 
   return (
     <>
       <Head>
-        <title>Harsh | Frontend Developer</title>
-        <meta name="description" content="Frontend developer with experience across 5+ startups and international clients. Passionate about building modern, performant web apps." />
+        <title>Harsh | Software Engineer</title>
+        <meta name="description" content="Software Engieer with experience across 5+ startups and international clients. Passionate about building modern, performant web apps." />
         <link rel="canonical" href="https://dev-harsh.vercel.app/" />
-        <meta property="og:title" content="Harsh | Frontend Developer" />
+        <meta property="og:title" content="Harsh | Software Engieer" />
         <meta property="og:description" content="Worked with international clients and reviewed codebases across startups." />
         <meta property="og:image" content="/images/og-image.jpg" />
         <meta property="og:image:alt" content="Harsh's portfolio preview" />
@@ -68,7 +68,7 @@ export default function Home() {
               '@context': 'https://schema.org',
               '@type': 'Person',
               'name': 'Harsh',
-              'jobTitle': 'Frontend Developer',
+              'jobTitle': 'Software Engieer',
               'url': 'https://dev-harsh.vercel.app',
               'sameAs': [
                 'https://github.com/thisisharsh7',
@@ -98,7 +98,7 @@ export default function Home() {
           {headingWords.map((word, idx) => (
             <motion.span
               key={idx}
-              className="inline-block mr-1 text-white drop-shadow-sm"
+              className="inline-block mr-2 text-white drop-shadow-sm"
               initial={{ opacity: 0, y: -30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.08 }}
@@ -114,7 +114,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
         >
-          Crafting fast, elegant frontend interfaces that deliver real results. Let&apos;s build something incredible together.
+          Crafting thoughtful, user-focused software that feels fast, looks clean, and works beautifully. Let&apos;s build something impactful together.
         </motion.p>
 
         <motion.div
