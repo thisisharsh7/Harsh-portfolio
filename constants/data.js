@@ -91,6 +91,14 @@ export const sampleProjects = [
   //   codeLink: 'https://github.com/thisisharsh7/my-shop',
   // },
   {
+    title: 'Git Playground',
+    description: 'A platform build for beginners in Git commands. It consist of git commands visuals also an online playground for practicing for Git commands. I vibe codeed it',
+    tech: ['AmazonQ', 'TailwindCSS', 'Next.js'],
+    screenshot: '/images/projects/git-playground.png',
+    liveLink: 'https://my-git-playground.vercel.app/',
+    codeLink: 'https://github.com/thisisharsh7/git-playground',
+  },
+  {
     title: '30 Days of Code',
     description: 'A collection of beginner-friendly web projects built over 30 days without tutorials, demonstrating self-taught frontend skills.',
     tech: ['HTML', 'CSS', 'JavaScript', 'React'],
@@ -156,6 +164,7 @@ export const preloadImageUrls = [
   '/images/projects/hacker-news.png',
   '/images/projects/dash-board.png',
   '/images/projects/story-app.png',
+  '/images/projects/git-playground.png',
   '/images/projects/chat-bot.png',
   '/images/projects/crater-dash.png',
   '/images/Harsh_Profile_Pic.jpg',
