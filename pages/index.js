@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaFolder, FaFileAlt, FaDownload, FaAward, FaStar, FaEnvelope } from 'react-icons/fa';
+import { FaFolder, FaFileAlt, FaDownload, FaAward, FaStar, FaEnvelope, FaGithub, FaLinkedin, FaTwitter, FaLaptopCode } from 'react-icons/fa';
 import Link from 'next/link';
 import Head from 'next/head';
+import Image from 'next/image';
 
 const files = [
   {
@@ -44,18 +45,22 @@ const files = [
   },
 ];
 
+const isReducedMotion = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 export default function Home() {
   const [activeCard, setActiveCard] = useState(null);
-  const headingWords = 'Software Engineer | UX-Focused'.split(' ');
+  const nameWords = ['Hi,', "I'm", 'Harsh'];
+  const titleWords = 'Software Engineer | UX-Focused'.split(' ');
 
   return (
     <>
       <Head>
-        <title>Harsh | Software Engineer</title>
-        <meta name="description" content="Software Engieer with experience across 5+ startups and international clients. Passionate about building modern, performant web apps." />
+        <title>Harsh Kumar | Full-Stack Developer - React, Next.js, TypeScript</title>
+        <meta name="description" content="Full-Stack Developer specializing in React, Next.js, TypeScript, Node.js, and AI integration. YC S25 sponsored maintainer with 2+ years building scalable web applications for startups." />
+        <meta name="keywords" content="Harsh Kumar, Full-Stack Developer, React Developer, Next.js, TypeScript, Node.js, Tailwind CSS, Firebase, MongoDB, AI Integration, UX Design, Software Engineer, YC S25, Frontend Developer, Web Developer" />
         <link rel="canonical" href="https://dev-harsh.vercel.app/" />
-        <meta property="og:title" content="Harsh | Software Engieer" />
-        <meta property="og:description" content="Worked with international clients and reviewed codebases across startups." />
+        <meta property="og:title" content="Harsh Kumar | Full-Stack Developer - React, Next.js, TypeScript" />
+        <meta property="og:description" content="Full-Stack Developer specializing in React, Next.js, TypeScript, and AI integration. YC S25 sponsored maintainer building scalable web applications." />
         <meta property="og:image" content="/images/og-image.jpg" />
         <meta property="og:image:alt" content="Harsh's portfolio preview" />
         <meta property="og:url" content="https://dev-harsh.vercel.app/" />
@@ -68,7 +73,7 @@ export default function Home() {
               '@context': 'https://schema.org',
               '@type': 'Person',
               'name': 'Harsh',
-              'jobTitle': 'Software Engieer',
+              'jobTitle': 'Full-Stack Developer',
               'url': 'https://dev-harsh.vercel.app',
               'sameAs': [
                 'https://github.com/thisisharsh7',
@@ -89,27 +94,64 @@ export default function Home() {
         role="main"
         aria-label="Portfolio Home page"
       >
-        <motion.h1
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-center leading-tight tracking-tight max-w-4xl"
-          initial="hidden"
-          animate="visible"
-          transition={{ staggerChildren: 0.05 }}
-        >
-          {headingWords.map((word, idx) => (
-            <motion.span
-              key={idx}
-              className="inline-block mr-2 text-white drop-shadow-sm"
-              initial={{ opacity: 0, y: -30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: idx * 0.08 }}
-            >
-              {word}
-            </motion.span>
-          ))}
-        </motion.h1>
+        <motion.div className="flex flex-col items-center mb-6">
+          <motion.div
+            className="mb-4 sm:mb-6"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <Image
+              src="/images/Harsh_Profile_Pic.jpg"
+              alt="Harsh's Profile"
+              width={120}
+              height={120}
+              className="rounded-full border-4 border-blue-500 shadow-lg object-cover"
+              priority
+            />
+          </motion.div>
+          
+          <motion.div
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-center leading-tight mb-3 sm:mb-4"
+            initial="hidden"
+            animate="visible"
+            transition={{ staggerChildren: 0.1 }}
+          >
+            {nameWords.map((word, idx) => (
+              <motion.span
+                key={idx}
+                className={`inline-block mr-2 ${idx === 2 ? 'text-blue-400' : 'text-white'} drop-shadow-sm`}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 + idx * 0.1 }}
+              >
+                {word}
+              </motion.span>
+            ))}
+          </motion.div>
+
+          <motion.h2
+            className="text-lg sm:text-xl md:text-2xl font-semibold text-center leading-tight tracking-tight max-w-4xl mb-2"
+            initial="hidden"
+            animate="visible"
+            transition={{ staggerChildren: 0.05 }}
+          >
+            {titleWords.map((word, idx) => (
+              <motion.span
+                key={idx}
+                className="inline-block mr-2 text-gray-300 drop-shadow-sm"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.8 + idx * 0.05 }}
+              >
+                {word}
+              </motion.span>
+            ))}
+          </motion.h2>
+        </motion.div>
 
         <motion.p
-          className="mt-4 max-w-xl text-center text-sm sm:text-base text-blue-100/90"
+          className="max-w-xl text-center text-sm sm:text-base text-blue-100/90"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
@@ -118,7 +160,7 @@ export default function Home() {
         </motion.p>
 
         <motion.div
-          className="mt-6 flex items-center justify-center gap-4"
+          className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
@@ -157,6 +199,59 @@ export default function Home() {
             Contact
           </a>
         </motion.div>
+
+        <motion.div
+          className="mt-6 flex justify-center gap-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.0, duration: 0.6 }}
+        >
+          <motion.a
+            href="https://github.com/thisisharsh7"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={isReducedMotion ? {} : { scale: 1.2, y: -2 }}
+            whileTap={isReducedMotion ? {} : { scale: 0.9 }}
+            className="text-2xl text-gray-400 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-full p-2"
+            aria-label="Visit Harsh's GitHub profile"
+          >
+            <FaGithub />
+          </motion.a>
+          <motion.a
+            href="https://linkedin.com/in/thisisharsh7"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={isReducedMotion ? {} : { scale: 1.2, y: -2 }}
+            whileTap={isReducedMotion ? {} : { scale: 0.9 }}
+            className="text-2xl text-gray-400 hover:text-blue-400 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-full p-2"
+            aria-label="Visit Harsh's LinkedIn profile"
+          >
+            <FaLinkedin />
+          </motion.a>
+          <motion.a
+            href="https://twitter.com/thisisharsh7"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={isReducedMotion ? {} : { scale: 1.2, y: -2 }}
+            whileTap={isReducedMotion ? {} : { scale: 0.9 }}
+            className="text-2xl text-gray-400 hover:text-blue-300 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-full p-2"
+            aria-label="Visit Harsh's Twitter profile"
+          >
+            <FaTwitter />
+          </motion.a>
+          <motion.a
+            href="https://www.frontendmentor.io/profile/thisisharsh7"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={isReducedMotion ? {} : { scale: 1.2, y: -2 }}
+            whileTap={isReducedMotion ? {} : { scale: 0.9 }}
+            className="text-2xl text-gray-400 hover:text-green-400 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-full p-2"
+            aria-label="Visit Harsh's Frontend Mentor profile"
+          >
+            <FaLaptopCode />
+          </motion.a>
+        </motion.div>
+
 
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-10 w-full max-w-[80rem] px-4"
