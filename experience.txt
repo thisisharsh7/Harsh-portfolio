@@ -1,0 +1,121 @@
+Epicenter (YC S25) logo
+Open source maintainer
+Open source maintainer
+Epicenter (YC S25)Epicenter (YC S25)
+Aug 2025 - Present · 2 mosAug 2025 to Present · 2 mos
+RemoteRemote
+• Maintaining and improving the Epicenter open-source project.
+• Implement features, fix issues, and review community contributions.
+• Recognized as an official maintainer via GitHub Sponsors
+• Maintaining and improving the Epicenter open-source project. • Implement features, fix issues, and review community contributions. • Recognized as an official maintainer via GitHub Sponsors
+Skills: UI/UX · Front-End Development · Code reveiw
+Skills: UI/UX · Front-End Development · Code reveiw
+
+ Userology logo
+Software Engineer
+Software Engineer
+Userology · InternshipUserology · Internship
+Aug 2024 - Jan 2025 · 6 mosAug 2024 to Jan 2025 · 6 mos
+RemoteRemote
+ helped me get this job
+LinkedIn helped me get this job
+• Developed secure login and registration flows using Firebase and Next.js.
+• Enhanced WebRTC video call performance for better connection stability and quality.
+• Built responsive web pages from Figma designs using React and TypeScript.
+• Collaborated with UI/UX and product teams in an Agile environment; participated in peer code reviews.
+• Developed secure login and registration flows using Firebase and Next.js. • Enhanced WebRTC video call performance for better connection stability and quality. • Built responsive web pages from Figma designs using React and TypeScript. • Collaborated with UI/UX and product teams in an Agile environment; participated in peer code reviews.
+Skills: Next.js · Firebase · Tailwind CSS
+Skills: Next.js · Firebase · Tailwind CSS
+
+Freelance Full-Stack Developer
+Freelance Full-Stack Developer
+Freelance Full-Stack Developer
+Self-employedSelf-employed
+Mar 2024 - Oct 2024 · 8 mosMar 2024 to Oct 2024 · 8 mos
+RemoteRemote
+• Developed a conversational AI platform with real-time chat capabilities
+• Integrated multiple AI services (OpenAI, D-ID, ElevenLabs) into cohesive user experience
+• Built full-stack solution with React frontend and Node.js backend
+• Implemented secure payment processing and user authentication
+• Successfully delivered MVP; project paused due to client pivot
+• Developed a conversational AI platform with real-time chat capabilities • Integrated multiple AI services (OpenAI, D-ID, ElevenLabs) into cohesive user experience • Built full-stack solution with React frontend and Node.js backend • Implemented secure payment processing and user authentication • Successfully delivered MVP; project paused due to client pivot
+Skills: Node.js · MongoDB · Firebase · Twilio · React.js · REST APIs · Stripe payment integeration
+Skills: Node.js · MongoDB · Firebase · Twilio · React.js · REST APIs · Stripe payment integeration
+
+ VaySolar logo
+Frontend Developer
+Frontend Developer
+VaySolar · InternshipVaySolar · Internship
+Nov 2023 - May 2024 · 7 mosNov 2023 to May 2024 · 7 mos
+New Delhi, IndiaNew Delhi, India
+• Designed internal dashboards for operations, admin, and client teams using React and Material-UI.
+• Integrated Swagger-documented APIs and optimized loading states for better perceived performance.
+• Worked directly with product leads in design reviews and weekly syncs.
+• Designed internal dashboards for operations, admin, and client teams using React and Material-UI. • Integrated Swagger-documented APIs and optimized loading states for better perceived performance. • Worked directly with product leads in design reviews and weekly syncs.
+Skills: React.js · Material-UI
+Skills: React.js · Material-UI
+
+ Frontend Mentor logo
+Mentor (Volunteer)
+Mentor (Volunteer)
+Frontend MentorFrontend Mentor
+Sep 2023 - Apr 2024 · 8 mosSep 2023 to Apr 2024 · 8 mos
+RemoteRemote
+• Reviewed 350+ user submissions, providing detailed feedback on HTML, CSS, JavaScript, and React projects.
+• Helped developers improve frontend implementations and best practices.
+• Earned multiple community badges (Mentor of the Week/Month)
+• Reviewed 350+ user submissions, providing detailed feedback on HTML, CSS, JavaScript, and React projects. • Helped developers improve frontend implementations and best practices. • Earned multiple community badges (Mentor of the Week/Month)
+Skills: Code Review · React.js · Responsive Web Design · CSS · JavaScript
+Skills: Code Review · React.js · Responsive Web Design · CSS · JavaScript
+
+ DecentraClasses logo
+Frontend Developer
+Frontend Developer
+Decentraclasses · Part-timeDecentraclasses · Part-time
+Oct 2023 - Feb 2024 · 5 mosOct 2023 to Feb 2024 · 5 mos
+RemoteRemote
+• Built the initial website of an early-stage EdTech startup using React and Tailwind CSS.
+• Translated Figma designs into responsive, mobile-friendly pages.
+• Added interactive animations and optimized load speed for a better UX.
+• Built the initial website of an early-stage EdTech startup using React and Tailwind CSS. • Translated Figma designs into responsive, mobile-friendly pages. • Added interactive animations and optimized load speed for a better UX.
+Skills: React.js · Tailwind CSS
+Skills: React.js · Tailwind CSS
+
+Frontend Developer
+Frontend Developer
+Frontend Developer
+Botter Solutions Pvt. Ltd. · FreelanceBotter Solutions Pvt. Ltd. · Freelance
+Nov 2023 - Dec 2023 · 2 mosNov 2023 to Dec 2023 · 2 mos
+RemoteRemote
+• Developed UI for directional drilling software in the Oil & Gas sector using React and Material-UI.
+• Built large Excel-style dataset views using MUI Data Grid with custom calculations.
+• Improved data visualization and UX for engineers by integrating APIs and optimizing responsiveness.
+• Developed UI for directional drilling software in the Oil & Gas sector using React and Material-UI. • Built large Excel-style dataset views using MUI Data Grid with custom calculations. • Improved data visualization and UX for engineers by integrating APIs and optimizing responsiveness.
+Skills: React.js · Material-UI
+Skills: React.js · Material-UI
+
+React.js Developer
+React.js Developer
+React.js Developer
+MyShop · InternshipMyShop · Internship
+Aug 2022 - Sep 2022 · 2 mosAug 2022 to Sep 2022 · 2 mos
+RemoteRemote
+• Developed complete responsive website from Figma designs using React
+• Implemented custom animations and loading states for enhanced user experience
+• Ensured cross-browser compatibility and mobile responsiveness
+• Collaborated with design team to maintain pixel-perfect implementation
+• First paid internship role, delivering production-ready web application
+• Developed complete responsive website from Figma designs using React • Implemented custom animations and loading states for enhanced user experience • Ensured cross-browser compatibility and mobile responsiveness • Collaborated with design team to maintain pixel-perfect implementation • First paid internship role, delivering production-ready web application
+Skills: React.js · emailjs · CSS
+Skills: React.js · emailjs · CSS
+
+ GirlScript Summer of Code logo
+Contributor
+Contributor
+GirlScript Summer of Code · Self-employedGirlScript Summer of Code · Self-employed
+Mar 2022 - May 2022 · 3 mosMar 2022 to May 2022 · 3 mos
+India · RemoteIndia · Remote
+- Contributed to open-source projects focused on improving frontend interactivity.
+- Submitted PRs that enhanced UI responsiveness, fixed bugs, and refined user experience.
+- Contributed to open-source projects focused on improving frontend interactivity. - Submitted PRs that enhanced UI responsiveness, fixed bugs, and refined user experience.
+Skills: CSS · JavaScript

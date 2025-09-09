@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaFolder, FaFileAlt, FaDownload } from 'react-icons/fa';
+import { FaFolder, FaFileAlt, FaDownload, FaAward, FaStar, FaEnvelope } from 'react-icons/fa';
 import Link from 'next/link';
 import Head from 'next/head';
 
@@ -118,10 +118,26 @@ export default function Home() {
         </motion.p>
 
         <motion.div
+          className="mt-6 flex items-center justify-center gap-4"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+        >
+          <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-orange-600/20 to-yellow-600/20 border border-orange-400/30 rounded-full">
+            <FaAward className="text-orange-400 text-sm" />
+            <span className="text-sm font-medium text-orange-200">2+ Years | Scalable Web Apps</span>
+          </div>
+          <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-400/30 rounded-full">
+            <FaStar className="text-yellow-400 text-sm" />
+            <span className="text-sm font-medium text-blue-200">YC S25 | Sponsored OSS Maintainer</span>
+          </div>
+        </motion.div>
+
+        <motion.div
           className="mt-6 flex items-center gap-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
+          transition={{ delay: 0.9 }}
         >
           <a
             href="/doc/Harsh_Resume.pdf"
@@ -137,7 +153,7 @@ export default function Home() {
             className="flex items-center gap-2 rounded-full bg-green-600 px-4 py-2 text-sm text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 focus:ring-offset-gray-900"
             aria-label="Contact Harsh via email"
           >
-            <FaFileAlt />
+            <FaEnvelope />
             Contact
           </a>
         </motion.div>
@@ -146,7 +162,7 @@ export default function Home() {
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-10 w-full max-w-[80rem] px-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.9 }}
+          transition={{ duration: 0.6, delay: 1.0 }}
         >
           {files.map(({ name, path, icon, color, description, highlight }, idx) => (
             <Link key={idx} href={path} passHref>

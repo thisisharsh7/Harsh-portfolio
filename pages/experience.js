@@ -8,10 +8,10 @@ export default function ExperiencePage() {
         <>
             <Head>
                 <title>Harsh | Experience</title>
-                <meta name="description" content="Explore Harsh's professional experience as a frontend developer across startups and international clients." />
+                <meta name="description" content="Explore Harsh's professional experience as a Full-Stack Developer, from sponsored open source maintainer at YC-backed Epicenter to software engineer roles." />
                 <link rel="canonical" href="https://dev-harsh.vercel.app/experience" />
                 <meta property="og:title" content="Harsh | Experience" />
-                <meta property="og:description" content="A timeline of Harsh's work experience, including roles at Userology, DRDO, and more." />
+                <meta property="og:description" content="A timeline of Harsh's work experience, including roles at Epicenter (YC S25), Userology, and freelance projects." />
                 <meta property="og:image" content="/images/og-image.jpg" />
                 <meta property="og:image:alt" content="Harsh's experience timeline" />
                 <meta property="og:url" content="https://dev-harsh.vercel.app/experience" />

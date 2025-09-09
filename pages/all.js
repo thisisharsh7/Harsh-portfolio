@@ -61,10 +61,10 @@ export default function FullPortfolioPage() {
     <>
       <Head>
         <title>Harsh | Full Portfolio</title>
-        <meta name="description" content="A comprehensive overview of Harsh's portfolio, including about, experience, projects, and achievements." />
+        <meta name="description" content="A comprehensive overview of Harsh's portfolio as a Full-Stack Developer and sponsored open source maintainer, including experience, projects, and achievements." />
         <link rel="canonical" href="https://dev-harsh.vercel.app/all" />
         <meta property="og:title" content="Harsh | Full Portfolio" />
-        <meta property="og:description" content="Explore Harsh's complete portfolio, showcasing frontend and full-stack expertise." />
+        <meta property="og:description" content="Explore Harsh's complete portfolio, showcasing Full-Stack development expertise and open source contributions." />
         <meta property="og:image" content="/images/og-image.jpg" />
         <meta property="og:image:alt" content="Harsh's full portfolio overview" />
         <meta property="og:url" content="https://dev-harsh.vercel.app/all" />
@@ -141,8 +141,8 @@ export default function FullPortfolioPage() {
               />
 
             </motion.div>
-            <h1 className="text-2xl sm:text-2xl 2xl:text-3xl font-bold text-white mt-4 text-center">Harsh — Software Engineer</h1>
-            <p className="text-sm sm:text-sm 2xl:text-base text-gray-300 mt-2 text-center">Turning user needs into clean, usable software 🚀</p>
+            <h1 className="text-2xl sm:text-2xl 2xl:text-3xl font-bold text-white mt-4 text-center">Harsh — Full-Stack Developer</h1>
+            <p className="text-sm sm:text-sm 2xl:text-base text-gray-300 mt-2 text-center">Sponsored Open Source Maintainer at YC-backed Epicenter</p>
             <SocialLinks />
           </div>
         </motion.div>
@@ -171,8 +171,9 @@ export default function FullPortfolioPage() {
                 <span className="text-cyan-300">👋</span> Hey There!
               </h3>
               <p>
-                I&apos;m Harsh — a UX-focused Software Engineer who enjoys building fast, intuitive, and user-friendly applications.
-                I combine clean frontend design with full-stack capabilities to deliver software that feels as good as it works.
+                I&apos;m a Full-Stack Developer specializing in modern web applications with React, Next.js, and Node.js.
+                Currently serving as a sponsored open source maintainer at Epicenter (YC S25) with 2+ years of experience
+                building scalable web applications and AI integrations.
               </p>
             </motion.div>
 
@@ -185,10 +186,10 @@ export default function FullPortfolioPage() {
                 <span className="text-cyan-300">🔭</span> Currently Working On
               </h3>
               <ul className="list-disc pl-5 space-y-2">
-                <li>Improving my Data Structures & Algorithms using C++ and Python.</li>
-                <li>Deepening frontend skills with React, Next.js, and Tailwind CSS.</li>
-                <li>Building full-stack apps with Firebase, MongoDB, and Express.</li>
-                <li>Exploring the fundamentals of AI and user-centric software design.</li>
+                <li>Contributing to UI/UX and reviewing community pull requests at Epicenter (YC S25)</li>
+                <li>Building AI-powered landing page generator with Python CLI and Next.js interface</li>
+                <li>Developing conversational AI platforms with OpenAI, Claude, and real-time integrations</li>
+                <li>Exploring opportunities in full-stack development with innovative teams</li>
               </ul>
             </motion.div>
 
@@ -201,11 +202,11 @@ export default function FullPortfolioPage() {
                 <span className="text-cyan-300">⚡</span> What I Do
               </h3>
               <ul className="list-disc pl-5 space-y-2">
-                <li>Design and build responsive user interfaces with React and Next.js.</li>
-                <li>Develop scalable full-stack applications with MERN & Firebase.</li>
-                <li>Focus on performance, interaction feel, and layout consistency.</li>
-                <li>Work with motion design and UX clarity to improve user experience.</li>
-                <li>Experiment with AI tools and automation in creative workflows.</li>
+                <li>Build secure authentication systems and enhance WebRTC video call performance</li>
+                <li>Develop full-stack applications with React, Node.js, MongoDB, and Firebase</li>
+                <li>Integrate AI APIs (OpenAI, Claude, D-ID, ElevenLabs) into production systems</li>
+                <li>Create responsive web applications from Figma designs with modern CSS</li>
+                <li>Review code and contribute to open source projects with global user bases</li>
               </ul>
             </motion.div>
 
@@ -219,30 +220,30 @@ export default function FullPortfolioPage() {
               </h3>
               <div className="flex flex-wrap gap-2">
                 {[
-                  'C',
-                  'C++',
                   'JavaScript',
-                  'Python',
                   'TypeScript',
-                  'HTML5',
-                  'CSS3',
-                  'React',
+                  'C++',
+                  'Python',
+                  'Java',
+                  'React.js',
                   'Next.js',
                   'Node.js',
                   'Express.js',
-                  'TailwindCSS',
-                  'Bootstrap',
                   'MongoDB',
                   'Firebase',
-                  'Netlify',
-                  'Vercel',
+                  'TailwindCSS',
+                  'Material-UI',
+                  'HTML5',
+                  'CSS3',
+                  'OpenAI API',
+                  'Claude API',
+                  'WebRTC',
                   'Git',
                   'GitHub',
-                  'Postman',
                   'VS Code',
                   'Figma',
-                  'ElevenLabs',
-                  'AI',
+                  'Vercel',
+                  'Stripe',
                 ].map((tech, idx) => (
                   <motion.span
                     key={tech}
