@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
+import Image from 'next/image';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import HomeButton from '../components/HomeButton';
 import { sampleProjects } from '../constants/data';
@@ -80,9 +81,11 @@ const ProjectsPage = () => {
                             {/* Screenshot */}
                             {project.screenshot && (
                                 <div className="relative w-full h-48 overflow-hidden group">
-                                    <img
+                                    <Image
                                         src={project.screenshot}
                                         alt={project.title}
+                                        width={400}
+                                        height={192}
                                         className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                                     />
                                 </div>

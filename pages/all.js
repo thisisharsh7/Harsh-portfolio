@@ -405,9 +405,11 @@ export default function FullPortfolioPage() {
               {/* Screenshot */}
               {project.screenshot && (
                 <div className="relative w-full h-48 overflow-hidden group">
-                  <img
+                  <Image
                     src={project.screenshot}
                     alt={project.title}
+                    width={400}
+                    height={192}
                     className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
