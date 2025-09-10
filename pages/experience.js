@@ -8,10 +8,10 @@ export default function ExperiencePage() {
         <>
             <Head>
                 <title>Harsh | Experience</title>
-                <meta name="description" content="Explore Harsh's professional experience as a Full-Stack Developer, from sponsored open source maintainer at YC-backed Epicenter to software engineer roles." />
+                <meta name="description" content="Explore Harsh Kumar's professional experience as a Full-Stack Developer with 2+ years building scalable web applications. From sponsored open source maintainer at Epicenter (YC S25) to software engineering roles." />
                 <link rel="canonical" href="https://dev-harsh.vercel.app/experience" />
                 <meta property="og:title" content="Harsh | Experience" />
-                <meta property="og:description" content="A timeline of Harsh's work experience, including roles at Epicenter (YC S25), Userology, and freelance projects." />
+                <meta property="og:description" content="Timeline of Harsh Kumar's work experience: sponsored maintainer at Epicenter (YC S25), Software Engineer at Userology, full-stack freelance projects, and technical mentoring." />
                 <meta property="og:image" content="/images/og-image.jpg" />
                 <meta property="og:image:alt" content="Harsh's experience timeline" />
                 <meta property="og:url" content="https://dev-harsh.vercel.app/experience" />
@@ -57,7 +57,7 @@ export default function ExperiencePage() {
                         ⏳ Experience Timeline
                     </h1>
                     <p className="text-slate-400 mt-4 text-md sm:text-xl max-w-2xl mx-auto">
-                        A detailed timeline of my professional journey, highlighting key roles and contributions in frontend and full-stack development.
+                        A detailed timeline of my professional journey with 2+ years of experience, highlighting key roles and contributions in full-stack development, AI integrations, and open source maintenance.
                     </p>
                 </div>
                 <div className="relative w-full pb-24">

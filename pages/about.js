@@ -31,10 +31,10 @@ export default function AboutPage() {
         <>
             <Head>
                 <title>Harsh | About Me</title>
-                <meta name="description" content="Learn about Harsh, a Full-Stack Developer and sponsored open source maintainer at YC-backed Epicenter with expertise in React, Next.js, and AI integrations." />
+                <meta name="description" content="Learn about Harsh Kumar, a Full-Stack Developer with 2+ years experience. Currently sponsored open source maintainer at Epicenter (YC S25) specializing in React, Next.js, Node.js, and AI integrations." />
                 <link rel="canonical" href="https://dev-harsh.vercel.app/about" />
                 <meta property="og:title" content="Harsh | About Me" />
-                <meta property="og:description" content="Discover Harsh's background, skills, and tech stack as a Full-Stack Developer and open source maintainer." />
+                <meta property="og:description" content="Full-Stack Developer with 2+ years experience. Sponsored open source maintainer at Epicenter (YC S25) building scalable web applications." />
                 <meta property="og:image" content="/images/Harsh_Profile_Pic.jpg" />
                 <meta property="og:image:alt" content="Harsh's profile picture" />
                 <meta property="og:url" content="https://dev-harsh.vercel.app/about" />
@@ -46,8 +46,8 @@ export default function AboutPage() {
                         __html: JSON.stringify({
                             '@context': 'https://schema.org',
                             '@type': 'Person',
-                            'name': 'Harsh',
-                            'jobTitle': 'Full-Stack Developer',
+                            'name': 'Harsh Kumar',
+                            'jobTitle': 'Full-Stack Developer | Open Source Maintainer',
                             'url': 'https://dev-harsh.vercel.app/about',
                             'image': 'https://dev-harsh.vercel.app/images/Harsh_Profile_Pic.jpg',
                             'sameAs': [
@@ -55,7 +55,7 @@ export default function AboutPage() {
                                 'https://linkedin.com/in/thisisharsh7',
                                 'https://twitter.com/thisisharsh7',
                             ],
-                            'description': 'A Full-Stack Developer and sponsored open source maintainer specializing in modern web applications, AI integrations, and scalable systems.',
+                            'description': 'Full-Stack Developer with 2+ years experience building scalable web applications. Currently sponsored open source maintainer at Epicenter (YC S25) specializing in React, Next.js, Node.js, and AI integrations.',
                         }),
                     }}
                 />
@@ -92,7 +92,7 @@ export default function AboutPage() {
 
                         </motion.div>
                         <h1 className="text-2xl sm:text-2xl 2xl:text-3xl font-bold text-white mt-4 text-center">Harsh Kumar</h1>
-                        <p className="text-sm sm:text-sm 2xl:text-base text-gray-300 mt-2 text-center">Sponsored Open Source Maintainer at YC-backed Epicenter</p>
+                        <p className="text-sm sm:text-sm 2xl:text-base text-gray-300 mt-2 text-center">Full-Stack Developer | Sponsored OSS Maintainer at Epicenter (YC S25)</p>
                         <SocialLinks />
                     </div>
                 </motion.div>
@@ -121,9 +121,9 @@ export default function AboutPage() {
                                 <span className="text-cyan-300">👋</span> Hey There!
                             </h3>
                             <p>
-                                I&apos;m a Full-Stack Developer specializing in modern web applications with React, Next.js, and Node.js. 
-                                Currently serving as a sponsored open source maintainer at Epicenter (YC S25) with 2+ years of experience 
-                                building scalable web applications and AI integrations.
+                                I&apos;m a Full-Stack Developer with 2+ years of experience building scalable web applications using React, Next.js, and Node.js. 
+                                Currently sponsored open source maintainer at Epicenter (YC S25), where I implement full-stack features, 
+                                fix critical issues, and review community contributions for a growing global user base.
                             </p>
                         </motion.div>
 
@@ -136,10 +136,10 @@ export default function AboutPage() {
                                 <span className="text-cyan-300">🔭</span> Currently Working On
                             </h3>
                             <ul className="list-disc pl-5 space-y-2">
-                                <li>Contributing to UI/UX and reviewing community pull requests at Epicenter (YC S25)</li>
-                                <li>Building AI-powered landing page generator with Python CLI and Next.js interface</li>
-                                <li>Developing conversational AI platforms with OpenAI, Claude, and real-time integrations</li>
-                                <li>Exploring opportunities in full-stack development with innovative teams</li>
+                                <li>Maintaining YC-backed productivity platform as sponsored GitHub maintainer</li>
+                                <li>Building AI-powered landing page generator with 12-phase UX methodology</li>
+                                <li>Implementing full-stack features and collaborating on product roadmap decisions</li>
+                                <li>Developing secure authentication systems and optimizing WebRTC performance</li>
                             </ul>
                         </motion.div>
 
@@ -152,11 +152,11 @@ export default function AboutPage() {
                                 <span className="text-cyan-300">⚡</span> What I Do
                             </h3>
                             <ul className="list-disc pl-5 space-y-2">
-                                <li>Build secure authentication systems and enhance WebRTC video call performance</li>
-                                <li>Develop full-stack applications with React, Node.js, MongoDB, and Firebase</li>
-                                <li>Integrate AI APIs (OpenAI, Claude, D-ID, ElevenLabs) into production systems</li>
-                                <li>Create responsive web applications from Figma designs with modern CSS</li>
-                                <li>Review code and contribute to open source projects with global user bases</li>
+                                <li>Built complete authentication systems with secure login/registration flows using Firebase</li>
+                                <li>Enhanced WebRTC video call performance, improving connection stability by 30%</li>
+                                <li>Developed conversational AI platform integrating OpenAI, D-ID, and ElevenLabs APIs</li>
+                                <li>Created internal dashboard applications for operations, admin, and client teams</li>
+                                <li>Reviewed 350+ web application submissions as Frontend Mentor technical mentor</li>
                             </ul>
                         </motion.div>
 
@@ -172,28 +172,30 @@ export default function AboutPage() {
                                 {[
                                     'JavaScript',
                                     'TypeScript',
-                                    'C++',
                                     'Python',
-                                    'Java',
+                                    'C++',
                                     'React.js',
                                     'Next.js',
                                     'Node.js',
                                     'Express.js',
                                     'MongoDB',
                                     'Firebase',
-                                    'TailwindCSS',
-                                    'Material-UI',
                                     'HTML5',
                                     'CSS3',
+                                    'Tailwind CSS',
                                     'OpenAI API',
                                     'Claude API',
+                                    'Gemini API',
                                     'WebRTC',
+                                    'JWT/OAuth',
+                                    'Stripe',
+                                    'RESTful APIs',
                                     'Git',
                                     'GitHub',
                                     'VS Code',
-                                    'Figma',
-                                    'Vercel',
-                                    'Stripe',
+                                    'Chrome DevTools',
+                                    'Webpack',
+                                    'Vite',
                                 ].map((tech, idx) => (
                                     <motion.span
                                         key={tech}

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaFolder, FaFileAlt, FaDownload, FaAward, FaStar, FaEnvelope, FaGithub, FaLinkedin, FaTwitter, FaLaptopCode } from 'react-icons/fa';
+import { FaFolder, FaFileAlt, FaDownload, FaEnvelope, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -50,17 +50,17 @@ const isReducedMotion = typeof window !== 'undefined' && window.matchMedia('(pre
 export default function Home() {
   const [activeCard, setActiveCard] = useState(null);
   const nameWords = ['Hi,', "I'm", 'Harsh'];
-  const titleWords = 'Software Engineer | UX-Focused'.split(' ');
+  const titleWords = 'Full-Stack Developer | Open Source Maintainer'.split(' ');
 
   return (
     <>
       <Head>
-        <title>Harsh Kumar | Full-Stack Developer - React, Next.js, TypeScript</title>
-        <meta name="description" content="Full-Stack Developer specializing in React, Next.js, TypeScript, Node.js, and AI integration. YC S25 sponsored maintainer with 2+ years building scalable web applications for startups." />
-        <meta name="keywords" content="Harsh Kumar, Full-Stack Developer, React Developer, Next.js, TypeScript, Node.js, Tailwind CSS, Firebase, MongoDB, AI Integration, UX Design, Software Engineer, YC S25, Frontend Developer, Web Developer" />
+        <title>Harsh Kumar | Full-Stack Developer - React, Next.js, Node.js</title>
+        <meta name="description" content="Full-Stack Developer with 2+ years of experience building scalable web applications using React, Next.js, and Node.js. Currently sponsored open source maintainer at YC-backed Epicenter (YC S25)." />
+        <meta name="keywords" content="Harsh Kumar, Full-Stack Developer, React Developer, Next.js, TypeScript, Node.js, Tailwind CSS, Firebase, MongoDB, AI Integration, WebRTC, Software Engineer, YC S25, Open Source Maintainer, Epicenter, Frontend Developer, Web Developer" />
         <link rel="canonical" href="https://dev-harsh.vercel.app/" />
-        <meta property="og:title" content="Harsh Kumar | Full-Stack Developer - React, Next.js, TypeScript" />
-        <meta property="og:description" content="Full-Stack Developer specializing in React, Next.js, TypeScript, and AI integration. YC S25 sponsored maintainer building scalable web applications." />
+        <meta property="og:title" content="Harsh Kumar | Full-Stack Developer - React, Next.js, Node.js" />
+        <meta property="og:description" content="Full-Stack Developer with 2+ years of experience. Currently sponsored open source maintainer at YC-backed Epicenter (YC S25)." />
         <meta property="og:image" content="/images/og-image.jpg" />
         <meta property="og:image:alt" content="Harsh's portfolio preview" />
         <meta property="og:url" content="https://dev-harsh.vercel.app/" />
@@ -72,8 +72,8 @@ export default function Home() {
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Person',
-              'name': 'Harsh',
-              'jobTitle': 'Full-Stack Developer',
+              'name': 'Harsh Kumar',
+              'jobTitle': 'Full-Stack Developer | Open Source Maintainer',
               'url': 'https://dev-harsh.vercel.app',
               'sameAs': [
                 'https://github.com/thisisharsh7',
@@ -110,7 +110,7 @@ export default function Home() {
               priority
             />
           </motion.div> */}
-          
+
           <motion.div
             className="text-2xl sm:text-3xl md:text-4xl font-bold text-center leading-tight mb-3 sm:mb-4"
             initial="hidden"
@@ -156,24 +156,8 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
         >
-          Crafting thoughtful, user-focused software that feels fast, looks clean, and works beautifully. Let&apos;s build something impactful together.
+          Full-Stack Developer with 2+ years of experience building scalable web applications using React, Next.js, and Node.js. Currently sponsored open source maintainer at YC-backed company.
         </motion.p>
-
-        <motion.div
-          className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-        >
-          <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-orange-600/20 to-yellow-600/20 border border-orange-400/30 rounded-full">
-            <FaAward className="text-orange-400 text-sm" />
-            <span className="text-sm font-medium text-orange-200">2+ Years | Scalable Web Apps</span>
-          </div>
-          <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-400/30 rounded-full">
-            <FaStar className="text-yellow-400 text-sm" />
-            <span className="text-sm font-medium text-blue-200">YC S25 | Sponsored OSS Maintainer</span>
-          </div>
-        </motion.div>
 
         <motion.div
           className="mt-6 flex items-center gap-3"
@@ -238,17 +222,6 @@ export default function Home() {
             aria-label="Visit Harsh's Twitter profile"
           >
             <FaTwitter />
-          </motion.a>
-          <motion.a
-            href="https://www.frontendmentor.io/profile/thisisharsh7"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={isReducedMotion ? {} : { scale: 1.2, y: -2 }}
-            whileTap={isReducedMotion ? {} : { scale: 0.9 }}
-            className="text-2xl text-gray-400 hover:text-green-400 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-full p-2"
-            aria-label="Visit Harsh's Frontend Mentor profile"
-          >
-            <FaLaptopCode />
           </motion.a>
         </motion.div>
 

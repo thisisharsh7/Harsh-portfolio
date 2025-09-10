@@ -61,10 +61,10 @@ export default function FullPortfolioPage() {
     <>
       <Head>
         <title>Harsh | Full Portfolio</title>
-        <meta name="description" content="A comprehensive overview of Harsh's portfolio as a Full-Stack Developer and sponsored open source maintainer, including experience, projects, and achievements." />
+        <meta name="description" content="A comprehensive overview of Harsh Kumar's portfolio as a Full-Stack Developer with 2+ years experience. Currently sponsored open source maintainer at Epicenter (YC S25), including experience, projects, and achievements." />
         <link rel="canonical" href="https://dev-harsh.vercel.app/all" />
         <meta property="og:title" content="Harsh | Full Portfolio" />
-        <meta property="og:description" content="Explore Harsh's complete portfolio, showcasing Full-Stack development expertise and open source contributions." />
+        <meta property="og:description" content="Explore Harsh Kumar's complete portfolio with 2+ years Full-Stack development experience, showcasing expertise in React, Node.js, AI integrations, and open source contributions at Epicenter (YC S25)." />
         <meta property="og:image" content="/images/og-image.jpg" />
         <meta property="og:image:alt" content="Harsh's full portfolio overview" />
         <meta property="og:url" content="https://dev-harsh.vercel.app/all" />
@@ -78,10 +78,10 @@ export default function FullPortfolioPage() {
               '@type': 'CollectionPage',
               'name': 'Harsh | Full Portfolio',
               'url': 'https://dev-harsh.vercel.app/all',
-              'description': 'A complete showcase of Harsh’s professional journey, projects, and achievements.',
+              'description': 'A complete showcase of Harsh Kumar\'s professional journey with 2+ years Full-Stack development experience, projects, and achievements.',
               'publisher': {
                 '@type': 'Person',
-                'name': 'Harsh',
+                'name': 'Harsh Kumar',
                 'sameAs': [
                   'https://github.com/thisisharsh7',
                   'https://linkedin.com/in/thisisharsh7',
@@ -142,7 +142,7 @@ export default function FullPortfolioPage() {
 
             </motion.div>
             <h1 className="text-2xl sm:text-2xl 2xl:text-3xl font-bold text-white mt-4 text-center">Harsh Kumar</h1>
-            <p className="text-sm sm:text-sm 2xl:text-base text-gray-300 mt-2 text-center">Sponsored Open Source Maintainer at YC-backed Epicenter</p>
+            <p className="text-sm sm:text-sm 2xl:text-base text-gray-300 mt-2 text-center">Full-Stack Developer | Sponsored OSS Maintainer at Epicenter (YC S25)</p>
             <SocialLinks />
           </div>
         </motion.div>
@@ -171,9 +171,9 @@ export default function FullPortfolioPage() {
                 <span className="text-cyan-300">👋</span> Hey There!
               </h3>
               <p>
-                I&apos;m a Full-Stack Developer specializing in modern web applications with React, Next.js, and Node.js.
-                Currently serving as a sponsored open source maintainer at Epicenter (YC S25) with 2+ years of experience
-                building scalable web applications and AI integrations.
+                I&apos;m a Full-Stack Developer with 2+ years of experience building scalable web applications using React, Next.js, and Node.js.
+                Currently sponsored open source maintainer at Epicenter (YC S25), where I implement full-stack features,
+                fix critical issues, and review community contributions for a growing global user base.
               </p>
             </motion.div>
 
@@ -186,10 +186,10 @@ export default function FullPortfolioPage() {
                 <span className="text-cyan-300">🔭</span> Currently Working On
               </h3>
               <ul className="list-disc pl-5 space-y-2">
-                <li>Contributing to UI/UX and reviewing community pull requests at Epicenter (YC S25)</li>
-                <li>Building AI-powered landing page generator with Python CLI and Next.js interface</li>
-                <li>Developing conversational AI platforms with OpenAI, Claude, and real-time integrations</li>
-                <li>Exploring opportunities in full-stack development with innovative teams</li>
+                <li>Maintaining YC-backed productivity platform as sponsored GitHub maintainer</li>
+                <li>Building AI-powered landing page generator with 12-phase UX methodology</li>
+                <li>Implementing full-stack features and collaborating on product roadmap decisions</li>
+                <li>Developing secure authentication systems and optimizing WebRTC performance</li>
               </ul>
             </motion.div>
 
@@ -202,11 +202,11 @@ export default function FullPortfolioPage() {
                 <span className="text-cyan-300">⚡</span> What I Do
               </h3>
               <ul className="list-disc pl-5 space-y-2">
-                <li>Build secure authentication systems and enhance WebRTC video call performance</li>
-                <li>Develop full-stack applications with React, Node.js, MongoDB, and Firebase</li>
-                <li>Integrate AI APIs (OpenAI, Claude, D-ID, ElevenLabs) into production systems</li>
-                <li>Create responsive web applications from Figma designs with modern CSS</li>
-                <li>Review code and contribute to open source projects with global user bases</li>
+                <li>Built complete authentication systems with secure login/registration flows using Firebase</li>
+                <li>Enhanced WebRTC video call performance, improving connection stability by 30%</li>
+                <li>Developed conversational AI platform integrating OpenAI, D-ID, and ElevenLabs APIs</li>
+                <li>Created internal dashboard applications for operations, admin, and client teams</li>
+                <li>Reviewed 350+ web application submissions as Frontend Mentor technical mentor</li>
               </ul>
             </motion.div>
 
@@ -222,28 +222,30 @@ export default function FullPortfolioPage() {
                 {[
                   'JavaScript',
                   'TypeScript',
-                  'C++',
                   'Python',
-                  'Java',
+                  'C++',
                   'React.js',
                   'Next.js',
                   'Node.js',
                   'Express.js',
                   'MongoDB',
                   'Firebase',
-                  'TailwindCSS',
-                  'Material-UI',
                   'HTML5',
                   'CSS3',
+                  'Tailwind CSS',
                   'OpenAI API',
                   'Claude API',
+                  'Gemini API',
                   'WebRTC',
+                  'JWT/OAuth',
+                  'Stripe',
+                  'RESTful APIs',
                   'Git',
                   'GitHub',
                   'VS Code',
-                  'Figma',
-                  'Vercel',
-                  'Stripe',
+                  'Chrome DevTools',
+                  'Webpack',
+                  'Vite',
                 ].map((tech, idx) => (
                   <motion.span
                     key={tech}
@@ -275,7 +277,7 @@ export default function FullPortfolioPage() {
             ⏳ Experience Timeline
           </h1>
           <p className="text-slate-400 mt-4 text-md sm:text-xl max-w-2xl mx-auto">
-            A detailed timeline of my professional journey, highlighting key roles and contributions in frontend and full-stack development.
+            A detailed timeline of my professional journey with 2+ years of experience, highlighting key roles and contributions in full-stack development, AI integrations, and open source maintenance.
           </p>
         </div>
         <div className="relative w-full pb-24">
@@ -372,7 +374,7 @@ export default function FullPortfolioPage() {
         </div>
 
         {/* Projects List */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
           {projectsToShow.map((project, i) => (
             <motion.div
               key={project.title}
@@ -387,7 +389,7 @@ export default function FullPortfolioPage() {
                 opacity: 1,
                 transition: { duration: 0.3, ease: 'easeOut' }
               }}
-              className="relative flex flex-col bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-cyan-400/40 max-w-md mx-auto"
+              className="relative flex flex-col bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-cyan-400/40 w-full max-w-sm mx-auto"
             >
               {/* VSCode-style top bar */}
               <div className="flex items-center justify-between bg-white/10 px-4 py-2 border-b border-white/20">

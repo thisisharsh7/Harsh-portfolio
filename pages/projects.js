@@ -48,7 +48,7 @@ const ProjectsPage = () => {
                 </div>
 
                 {/* Projects List */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
                     {projectsToShow.map((project, i) => (
                         <motion.div
                             key={project.title}
@@ -63,7 +63,7 @@ const ProjectsPage = () => {
                                 opacity: 1,
                                 transition: { duration: 0.3, ease: 'easeOut' }
                             }}
-                            className="relative flex flex-col bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-cyan-400/40 max-w-md mx-auto"
+                            className="relative flex flex-col bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-cyan-400/40 w-full max-w-sm mx-auto"
                         >
                             {/* VSCode-style top bar */}
                             <div className="flex items-center justify-between bg-white/10 px-4 py-2 border-b border-white/20">

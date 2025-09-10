@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaTwitter, FaLaptopCode, FaDownload, FaFileAlt } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaDownload, FaFileAlt } from 'react-icons/fa';
 
 const isReducedMotion = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -38,17 +38,6 @@ const SocialLinks = () => (
                 aria-label="Visit Harsh's Twitter profile"
             >
                 <FaTwitter />
-            </motion.a>
-            <motion.a
-                href="https://www.frontendmentor.io/profile/thisisharsh7"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={isReducedMotion ? {} : { scale: 1.1 }}
-                whileTap={isReducedMotion ? {} : { scale: 0.9 }}
-                className="text-2xl text-white hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900"
-                aria-label="Visit Harsh's Frontend Mentor profile"
-            >
-                <FaLaptopCode />
             </motion.a>
         </div>
         <motion.div
