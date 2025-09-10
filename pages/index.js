@@ -95,7 +95,7 @@ export default function Home() {
         aria-label="Portfolio Home page"
       >
         <motion.div className="flex flex-col items-center mb-6">
-          <motion.div
+          {/* <motion.div
             className="mb-4 sm:mb-6"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -106,10 +106,10 @@ export default function Home() {
               alt="Harsh's Profile"
               width={120}
               height={120}
-              className="rounded-full border-4 border-blue-500 shadow-lg object-cover"
+              className="rounded-full border-4 border-blue-500 shadow-lg object-contain"
               priority
             />
-          </motion.div>
+          </motion.div> */}
           
           <motion.div
             className="text-2xl sm:text-3xl md:text-4xl font-bold text-center leading-tight mb-3 sm:mb-4"
@@ -188,7 +188,7 @@ export default function Home() {
             aria-label="Download Harsh's resume"
           >
             <FaDownload />
-            Resume
+            <span>Resume</span>
           </a>
           <a
             href="mailto:9u.harsh@gmail.com"
@@ -196,7 +196,7 @@ export default function Home() {
             aria-label="Contact Harsh via email"
           >
             <FaEnvelope />
-            Contact
+            <span>Contact</span>
           </a>
         </motion.div>
 

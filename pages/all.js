@@ -141,7 +141,7 @@ export default function FullPortfolioPage() {
               />
 
             </motion.div>
-            <h1 className="text-2xl sm:text-2xl 2xl:text-3xl font-bold text-white mt-4 text-center">Harsh — Full-Stack Developer</h1>
+            <h1 className="text-2xl sm:text-2xl 2xl:text-3xl font-bold text-white mt-4 text-center">Harsh Kumar</h1>
             <p className="text-sm sm:text-sm 2xl:text-base text-gray-300 mt-2 text-center">Sponsored Open Source Maintainer at YC-backed Epicenter</p>
             <SocialLinks />
           </div>
